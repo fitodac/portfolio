@@ -1,0 +1,532 @@
+
+
+/*-------------------------------------------------------
+GLOBAL FORMS
+--------------------------------------------------------*/
+form{margin:0 0 21px;
+
+    div.blk{padding		:0 0 14px;}
+
+	ul li{
+		line-height		:0;
+		padding			:0 0 14px;
+		.blk;
+	}
+}
+
+
+input,
+select,
+textarea{width:100%;}
+
+
+
+/*-------------------------------------------------------
+GLOBAL FIELDS STYLE
+--------------------------------------------------------*/
+input[type="text"],
+input[type="password"],
+input[type="search"],
+textarea,
+.iFileDescription,
+select{
+	background					: #FFF; 
+	color						: #A3ADB6;
+	border						: solid 1px #C0C8CD;
+	font						: 13px/15px @arial;
+	.rounded					(3px);
+	@this_shadow				: 1px 1px 3px #E0E0E0 inset, 0 0 0 transparent;
+	.box-shadow					(@this_shadow);
+	.transition					(.2s);
+	.box-sizing					(border-box);
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus{
+	color						: #4E5A63;
+	border						: solid 1px #738491;
+	@this_shadow				: 0 0 0 transparent inset, 0 0 6px #B6B6B6;
+	.box-shadow					(@this_shadow);
+}
+
+
+
+
+/*-------------------------------------------------------
+INPUT (Text / Password / Search)
+--------------------------------------------------------*/
+input[type="text"], input[type="password"], input[type="search"]{
+	margin						: 0 0 5px;
+	padding						: 7px 14px;
+}
+
+	
+
+/*-------------------------------------------------------
+INPUT (Text & Password) DISABLED
+--------------------------------------------------------*/
+input[disabled="disabled"], input[disabled="disabled"]:hover{
+	background					: #EEE; 
+	color						: #B6B6B6; 
+	border						: solid 1px #CACACA; 
+	cursor						: not-allowed; 
+	.text-shadow				(0 1px 0 #FFF);
+}
+
+
+
+/*-------------------------------------------------------
+TEXT AREA
+--------------------------------------------------------*/
+textarea{
+	margin						: 0 0 5px;
+	padding						: 7px 14px;
+	min-height					: 150px;
+	resize						: none;
+}
+		
+		
+
+/*------------------------------------------------------- 
+LABELS
+--------------------------------------------------------*/
+label{
+	color						: #818A8F;
+	font						: bold 12px/15px @arial;
+	letter-spacing				: -.1px;
+	margin						: 0 0 5px;
+	vertical-align				: middle;
+	.iBlk;
+}
+    
+label[for]{	cursor : pointer; }
+
+
+// ASOCIATED TEXT HELP
+.lbl_help{
+	font						: 11px @arial;
+	display						: block;
+}
+
+
+
+
+/*-------------------------------------------------------
+INPUTS Prepended & Appended
+--------------------------------------------------------*/
+.input_tag{font-size:0;
+
+	input,
+	span,
+	button,
+	button.default,
+	button.blue,
+	button.green,
+	button.yellow,
+	button.red{.rounded(0);}
+	
+	& > *:first-child{
+		.border-radius			(3px,0,0,3px)!important;
+		margin-right			: -1px;
+	}
+	
+	& > *:last-child{
+		.border-radius			(0,3px,3px,0)!important;
+		margin-left				: -1px;
+	}
+	
+	span,
+	button{
+		background				: #E3E3E3;
+		border					: solid 1px #C0C8CD;
+		font					: 13px/16px @arial;
+		.txtCntr;
+		min-width				: 14px;
+		padding					: 7px;
+		vertical-align			: top;
+		.iBlk;
+		.text-shadow			(0 -1px 0 #FFF);
+		z-index					: 90;
+		
+		& > *{vertical-align:top;}
+		
+		i{line-height			: 14px;}
+	}
+	
+	button{
+		line-height				: 14px;
+		padding					: 7px!important;
+	}
+}
+
+
+
+
+/*-------------------------------------------------------
+SELECT
+--------------------------------------------------------*/
+select{
+	padding						: 5px 7px;
+	cursor						: pointer;
+}
+
+option{}
+	
+
+
+// SELECT MULTIPLE
+select[multiple="multiple"]{
+	padding						: 0 7px;
+}
+
+
+
+
+/*-------------------------------------------------------
+RADIO BUTTONS
+--------------------------------------------------------*/
+input[type="radio"]{
+	width						: auto;
+	margin						: 0;
+	vertical-align				:top;
+	.opacity					(0);
+	z-index						: 0;
+}
+    
+input[type="radio"] + label{
+	line-height				: 14px;
+	margin					: 0 0 0 3px;
+	cursor					: pointer;
+}
+
+label.radioBtn{
+	background					: #FFF;
+	border						: solid 1px #818A8F;
+	width						: 10px;
+	height						: 10px;
+	margin						: 0;
+	padding						: 0;
+	text-indent					: -99999em;
+	position					: absolute;
+	cursor						: pointer;
+	.rounded					(100%);
+	@this_shadow				: 0 -1px 2px #B6B6B6 inset, 0 1px 3px #B6B6B6;
+	.box-shadow					(@this_shadow);
+}
+
+label.radioBtn:hover{
+	.box-shadow					(0 0 4px #B6B6B6);
+}
+
+label.radioBtn.chkd{}
+	label.radioBtn.chkd:after{
+		content					: "";
+		background				: #6CAEBE;
+		width					: 8px;
+		height					: 8px;
+		left					: 1px;
+		top						: 1px;
+		position				: absolute;
+		.rounded				(100%);
+	}
+
+
+
+
+/*-------------------------------------------------------
+CHECKBOX
+--------------------------------------------------------*/
+input[type="checkbox"]{
+	width						: auto;
+	margin						: 0;
+	vertical-align				: top;
+	.opacity					(0);
+	z-index						: 0;
+}
+
+input[type="checkbox"] + label{
+	line-height					: 17px;
+	margin						: 0 7px 0 5px;
+	cursor						: pointer;
+}
+
+label.chkbx{
+	background					: #FFF;
+	border						: solid 1px #818A8F;
+	width						: 14px;
+	height						: 14px;
+	margin						: 0;
+	padding						: 0;
+	text-indent					: -99999em;
+	position					: absolute;
+	cursor						: pointer;
+	border-radius				: 4px;
+	@this_shadow				: 0 -1px 3px #B6B6B6 inset, 0 0 3px #B6B6B6;
+	.box-shadow					(@this_shadow);
+}
+
+label.chkbx:hover{
+	.box-shadow					(0 0 4px #B6B6B6);
+}
+
+label.chkbx.chkd{}
+	label.chkbx.chkd:after{
+		content					: "";
+		background				: url(../images/forms/check.png) no-repeat;
+		width					: 10px;
+		height					: 10px;
+		left					: 2px;
+		top						: 2px;
+		position				: absolute;
+		.rounded				(2px);
+	}
+
+
+
+
+/*-------------------------------------------------------
+INPUT FILE
+--------------------------------------------------------*/
+.iFile{
+	background					: #E6E6E6; 
+	.gradient > .vertical		(#FFF, #E6E6E6);
+	color						: #818A8F;
+	border						: solid 1px #CCC;
+	font-size					: 12px;
+	line-height					: 16px;
+	font-weight					: bold;
+	padding						: 7px 14px;
+	margin						: 0 0 0 -4px;
+	overflow					: hidden;
+	.iBlk;
+	.border-radius				(0,3px,3px,0);
+}
+
+.iFile:hover{
+	background					: #E6E6E6;
+}
+
+.iFile input[type="file"]{
+	font-size					: 100px;
+	width						: 110%;
+	right						: -2px;
+	top							: -2px;
+	position					: absolute;
+	opacity						: 0;
+	filter						: alpha(opacity=0);
+	cursor						: pointer;
+}
+
+.iFileDescription{
+	white-space					: nowrap;
+	min-width					: 110px;
+	height						: 32px;
+	margin						: 0;
+	padding						: 7px 44px 7px 14px;
+	vertical-align				: top;
+	.iBlk;
+	overflow					: hidden;
+	.border-radius				(3px,0,0,3px);
+	
+	
+	em{
+		.blk;
+		overflow				: hidden;
+		text-overflow			: ellipsis;
+	}
+	
+	
+	.remove_btn{
+		background				: fade(#E6E6E6,80%);
+		border-left				: solid 1px #C0C8CD;
+		color					: #666;
+		font-size				: 11px;
+		line-height				: 28px;
+		font-weight				: bold;
+		letter-spacing			: .7px;
+		margin					: 0 0 0 -34px;
+		padding					: 0 7px;
+		left					: 100%;
+		top						: 0;
+		position				: absolute;
+		cursor					: pointer;
+		.text-shadow			(0 -1px 0 #FFF);
+		.transition				(.2s ease-out);
+		z-index					: 999;
+		
+		
+		i{
+			font-size:18px;
+			margin-right:7px;
+			vertical-align:middle;
+		}
+	}
+	
+	&:hover .remove_btn{
+		margin					: 0 0 0 -85px;
+	}
+	
+	// LOADER BETA
+	.animate_bar{
+		font-style				: normal;
+		height					: 100%;
+		padding					: 6px 14px;
+		left					: 0;
+		top						: 0;
+		position				: absolute;
+		z-index					: 999;
+		.box-sizing				(border-box);
+	}
+}
+
+
+
+
+/*-------------------------------------------------------
+CHECKBOX BUTTONS
+--------------------------------------------------------*/
+input[type="checkbox"].chk_button{
+	position					: absolute;
+	visibility					: hidden;
+
+	& + label{
+		background				: #E6E6E6; 
+		.gradient > .vertical	(#FFF, #E6E6E6);
+		color					: #818A8F;
+		border					: solid 1px #CCC;
+		font-size				: 12px;
+		font-weight				: bold;
+		line-height				: 18px;
+		margin					: 0 2px 8px;
+		padding					: 7px 21px;
+		top						: 0;
+		.iBlk;
+		.rounded				(3px);
+		.box-shadow				(0 0 0 1px #FFF inset);
+		.text-shadow			(0 1px 0 #FFF);
+		.transition				(.2s);
+		cursor					: pointer;
+	}
+	
+	& + label:hover{
+		background				: #EEE;
+	}
+	
+	& + label:focus,
+	&:checked + label{
+		background				: #333;
+		border-color			: #333;
+		color					: #FFF;
+		.box-shadow				(none);
+		.text-shadow			(none);
+	}
+}
+
+
+
+/*-------------------------------------------------------
+SWITCH (ON/OFF BUTTONS)
+--------------------------------------------------------*/
+.switch{
+	position					: absolute;
+}
+
+.switchBtn{
+	.clearfix;
+	
+	background					: #C0C8CD;
+	color						: #FFF;
+	border						: solid 1px #818A8F;
+	font						: bold 12px @arial;
+	line-height					: 21px;
+	height						: 21px;
+	margin						: 0 7px;
+	.iBlk;
+	overflow					: hidden;
+	.rounded					(21px);
+	@this_shadow				: 1px 1px 2px fade(#000,30%) inset, 0 1px 2px #C0C8CD;
+	.box-shadow					(@this_shadow);
+	
+	i{
+		background				: #FFF;
+		width					: 21px;
+		height					: 21px;
+		left					: 0;
+		top						: 0;
+		position				: absolute;
+		.blk;
+		@this_shadow			: 0 -4px 5px #CCC inset, 0 0 6px #333;
+		.box-shadow				(@this_shadow);
+		.rounded				(100%);
+		z-index					: 999;
+		.transition				(.2s ease-out);
+	}
+	
+	&.chkd{
+		background				: #6CAEBE;
+	
+		i{
+			margin-left			: 100%;
+			left				: -21px;
+			.transition			(.2s ease-in);
+		}
+	}
+	
+	.statOn{
+		line-height				: 21px;
+		margin					: 0 7px;
+		.blk;
+		.lft;
+		.text-shadow			(0 -1px 0 fade(#000,30%));
+	}
+	
+	.statOff{
+		line-height				: 21px;
+		margin					: 0 7px;
+		.blk;
+		.rgt;
+		.text-shadow			(0 -1px 0 fade(#000,30%));
+	}
+}
+
+
+
+/*-------------------------------------------------------
+ERROR MESSAGES (Validations)
+--------------------------------------------------------*/
+div.error{
+	background					: url(../@{imgDir}/forms/alert.png) no-repeat left center;
+	color						: #D50000;
+	font						: 11px @arial;
+	letter-spacing				: 0;
+	margin						: 0 0 7px;
+	padding						: 0 0 0 21px;
+	.blk;
+}
+
+input.error,
+select.error,
+textarea.error,
+input.error:hover,
+select.error:hover,
+textarea.error:hover,
+input.error:focus,
+select.error:focus,
+textarea.error:focus{
+	border-color				: #D50000;
+	border-width				: 2px;
+	color						: #D50000;
+}
+
+
+
+
+
+
+
+
+
