@@ -1,0 +1,302 @@
+
+
+
+/*------------------------------------------------------- 
+HEADINGS
+--------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+		color			: #333;
+}
+
+h1{
+	font							: 36px/38px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+
+    small{
+			color					: #666;
+			font-size			: 33px;
+		}
+}
+
+
+h2{
+	font							: 30px/32px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+
+    small{
+			color					: #666;
+			font-size			: 27px;
+		}
+}
+
+
+h3{
+	font							: 24px/26px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+
+    small{
+			color					: #666;
+			font-size			: 21px;
+		}
+}
+
+
+h4{
+	font							: 18px/20px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+	
+    small{
+			color					: #666;
+			font-size			: 15px;
+		}
+}
+
+
+h5{
+	font							: 14px/16px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+
+    small{
+			color					: #666;
+			font-size			: 11px;
+		}
+}
+
+
+h6{
+	font							: 12px/14px @roboto;
+	letter-spacing		: -1px;
+	margin						: 0 0 14px;
+
+    small{
+			color					: #666;
+			font-size			: 9px;
+		}
+}
+
+
+
+
+/*------------------------------------------------------- 
+PARAGRAPHS
+--------------------------------------------------------*/
+p{
+	margin				: 0 0 21px;
+}
+
+
+
+/*-------------------------------------------------------
+LINKS
+--------------------------------------------------------*/
+a{
+	color				: #006FA4;
+	text-decoration		: none;
+	cursor				: pointer;
+	.transition			(.2s);
+	
+	
+    &:hover{
+		color			: #006FA4;
+		text-decoration	: underline;
+	}
+}
+
+
+
+/*------------------------------------------------------- 
+HIGHLIGHT TEXT
+--------------------------------------------------------*/
+.highlight{
+	background			: #FFFF82;
+	color				: #000;
+	padding				: 3px 5px;
+}
+
+
+
+/*------------------------------------------------------- 
+SELECTED TEXT
+--------------------------------------------------------*/
+::-moz-selection		{background:#0066FF; color:#FFF;}
+::selection				{background:#0066FF; color:#FFF;}
+
+
+
+/*------------------------------------------------------- 
+STYLED ELEMENTS
+--------------------------------------------------------*/
+.italic, i{
+	font-style			: italic;
+}
+
+.upper{
+	text-transform		: uppercase;
+}
+
+big{
+	font-size			: 16px;
+	line-height			: 17px;
+}
+
+small{
+	font-size			: 10px;
+	letter-spacing		: 0;
+	line-height			: 10px;
+}
+
+strong{
+	font-weight			: bold;
+}
+
+code{
+	background			: #F3F3F3;
+	border				: solid 1px #CCC;
+	font				: 12px/21px @courier_new;
+	padding				: 1px 4px;
+	border-radius		: 3px;
+}
+
+sub{
+	font-size			: smaller;
+	vertical-align		: sub;
+}
+
+sup{
+	font-size			: smaller;
+	vertical-align		: super;
+	top					: 2px;
+}
+
+abbr{
+	border-bottom		: 1px dotted #999;
+	cursor				: help;
+}
+
+
+
+/*------------------------------------------------------- 
+BLOCKQUOTE
+--------------------------------------------------------*/
+blockquote{
+	color				: #B0B0B0;
+	border-left			: solid 6px lighten(#B0B0B0, 20%);
+	font				: 14px @georgia;
+	.italic;
+	letter-spacing		: 0;
+	line-height			: 30px;
+	.txtLft;
+	padding				: 0 0 0 40px;
+	z-index				: 9999;
+	.iBlk;
+	.text-shadow		(0 1px 0 #FFF);
+
+    p{margin			: 0;}
+
+    small{
+		font-size		: @blockquoteFontSize - 6;
+		font-style		: normal;
+		.txtRgt;
+		.blk;
+	}
+}
+
+
+
+/*------------------------------------------------------- 
+LABELS
+--------------------------------------------------------*/
+.label{
+	background			: #999;
+	color				: #FFF;
+	padding				: 3px 5px;
+	.rounded			(3px);
+	display				: inline;
+	.text-shadow		(0 -1px 1px fade(#000,40%));
+
+	
+    &.green				{background:#109618;}
+    &.red				{background:#DC3912;}
+    &.yellow			{background:#FF9900;}
+    &.blue				{background:#3366CC;}
+}
+
+
+
+
+/*------------------------------------------------------- 
+LISTS
+--------------------------------------------------------*/
+ul.list{
+
+    li{
+		list-style		: square inside none;
+	}
+		
+    li ul{
+		padding-left	: 14px;
+	}
+	
+    li ul li{
+		list-style		: disc inside none;
+	}
+}
+
+
+ol{
+    li{
+		list-style		: decimal inside none;
+	}
+	
+		li ol{
+			padding-left	: 14px;
+		}
+		
+		li ol li{
+			list-style		: lower-latin inside none;
+		}
+}
+
+
+dl{
+    dt{
+		font-weight		: bold;
+	}
+	
+    dd{
+		margin			: 0 0 14px;
+	}
+}
+
+
+dl.dl_inline{
+    dt{
+		font-weight		: bold;
+		.txtRgt;
+		width			:120px;
+		.lft;
+		clear			: left;
+	}
+	
+    dd{
+		margin			: 0 0 14px 120px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
