@@ -1,0 +1,175 @@
+
+
+/**************
+*	Based on "The Semantic Grid System" - http://semantic.gs
+**************/
+
+
+/*-------------- GRID - FIXED LAYOUT --------------*/
+@layoutWidth:	980px;
+@columnWidth: 	28;
+@gridCols:		35;
+
+
+@gridSystemWidth: (@columnWidth*@gridCols) * 1px;
+
+@totalWidth: @gridSystemWidth;
+
+.grid(@x,@gridCols:@gridCols){ width: @totalWidth*((@columnWidth * @x) / @gridSystemWidth); }
+
+
+.grid1	{.grid(1);}
+.grid2	{.grid(2);}
+.grid3	{.grid(3);}
+.grid4	{.grid(4);}
+.grid5	{.grid(5);}
+.grid6	{.grid(6);}
+.grid7	{.grid(7);}
+.grid8	{.grid(8);}
+.grid9	{.grid(9);}
+.grid10	{.grid(10);}
+.grid11	{.grid(11);}
+.grid12	{.grid(12);}
+.grid13	{.grid(13);}
+.grid14	{.grid(14);}
+.grid15	{.grid(15);}
+.grid16	{.grid(16);}
+.grid17	{.grid(17);}
+.grid18	{.grid(18);}
+.grid19	{.grid(19);}
+.grid20	{.grid(20);}
+.grid21	{.grid(21);}
+.grid22	{.grid(22);}
+.grid23	{.grid(23);}
+.grid24	{.grid(24);}
+.grid25	{.grid(25);}
+.grid26	{.grid(26);}
+.grid27	{.grid(27);}
+.grid28	{.grid(28);}
+.grid29	{.grid(29);}
+.grid30	{.grid(30);}
+.grid31	{.grid(31);}
+.grid32	{.grid(32);}
+.grid33	{.grid(33);}
+.grid34	{.grid(34);}
+.grid35	{.grid(35);}
+
+
+
+
+/*-------------- GRID - NESTED --------------*/
+.nest(@nestVal){
+
+	@columnWidth	: (28 * @nestVal)/35;	
+	.nest_grids;
+}
+
+.nest_grids{
+	.grid1	{.grid(1);}
+	.grid2	{.grid(2);}
+	.grid3	{.grid(3);}
+	.grid4	{.grid(4);}
+	.grid5	{.grid(5);}
+	.grid6	{.grid(6);}
+	.grid7	{.grid(7);}
+	.grid8	{.grid(8);}
+	.grid9	{.grid(9);}
+	.grid10	{.grid(10);}
+	.grid11	{.grid(11);}
+	.grid12	{.grid(12);}
+	.grid13	{.grid(13);}
+	.grid14	{.grid(14);}
+	.grid15	{.grid(15);}
+	.grid16	{.grid(16);}
+	.grid17	{.grid(17);}
+	.grid18	{.grid(18);}
+	.grid19	{.grid(19);}
+	.grid20	{.grid(20);}
+	.grid21	{.grid(21);}
+	.grid22	{.grid(22);}
+	.grid23	{.grid(23);}
+	.grid24	{.grid(24);}
+	.grid25	{.grid(25);}
+	.grid26	{.grid(26);}
+	.grid27	{.grid(27);}
+	.grid28	{.grid(28);}
+	.grid29	{.grid(29);}
+	.grid30	{.grid(30);}
+	.grid31	{.grid(31);}
+	.grid32	{.grid(32);}
+	.grid33	{.grid(33);}
+	.grid34	{.grid(34);}
+	.grid35	{.grid(35);}
+};
+
+
+
+
+
+/*-------------- GRID - FLUID LAYOUT --------------*/
+.fluid{
+
+	@layoutWidth:	100%;
+	@columnWidth: 	28;
+	@gridCols:		35;
+
+	@totalWidth: 100%;
+
+	.grid(@x,@gridCols:@gridCols){ width: @totalWidth*((@columnWidth * @x) / @gridSystemWidth); }
+
+	.grid1	{.grid(1);}
+	.grid2	{.grid(2);}
+	.grid3	{.grid(3);}
+	.grid4	{.grid(4);}
+	.grid5	{.grid(5);}
+	.grid6	{.grid(6);}
+	.grid7	{.grid(7);}
+	.grid8	{.grid(8);}
+	.grid9	{.grid(9);}
+	.grid10	{.grid(10);}
+	.grid11	{.grid(11);}
+	.grid12	{.grid(12);}
+	.grid13	{.grid(13);}
+	.grid14	{.grid(14);}
+	.grid15	{.grid(15);}
+	.grid16	{.grid(16);}
+	.grid17	{.grid(17);}
+	.grid18	{.grid(18);}
+	.grid19	{.grid(19);}
+	.grid20	{.grid(20);}
+	.grid21	{.grid(21);}
+	.grid22	{.grid(22);}
+	.grid23	{.grid(23);}
+	.grid24	{.grid(24);}
+	.grid25	{.grid(25);}
+	.grid26	{.grid(26);}
+	.grid27	{.grid(27);}
+	.grid28	{.grid(28);}
+	.grid29	{.grid(29);}
+	.grid30	{.grid(30);}
+	.grid31	{.grid(31);}
+	.grid32	{.grid(32);}
+	.grid33	{.grid(33);}
+	.grid34	{.grid(34);}
+	.grid35	{.grid(35);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
