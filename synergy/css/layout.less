@@ -1,0 +1,138 @@
+
+
+/*-------------------------------------------------------
+BODY
+-------------------------------------------------------*/
+body{
+	background			: #FFF;
+	color						: #333;
+	font						: 300 13px/18px @roboto;
+	margin					: 0;
+	padding					: 0;
+	overflow-x			: hidden;
+	overflow-y			: visible;
+}
+
+
+
+/*-------------------------------------------------------
+WRAPPER
+-------------------------------------------------------*/
+.wrapper{
+	width				: 100%;
+	height				: 100%;
+}
+
+
+
+/*-------------------------------------------------------
+HEADER
+-------------------------------------------------------*/
+.header{
+	color				: #EDF2F6;
+	width				: 100%;
+	z-index				: 999;
+	.blk;
+	
+	
+	& > .inner{
+		background		: url(../images/header_bg.jpg) no-repeat center top;
+		width:1280px;
+		min-hieght:484px;
+		.cntr;
+		.box-sizing		(border-box);
+		
+		hgroup{
+			background:url(../images/color_bg.png) no-repeat right top;
+			.grid35;
+			.cntr;
+			padding			: 80px 0 50px;
+		}
+	}
+}
+    
+
+
+
+/*-------------------------------------------------------
+SITE LOGO
+-------------------------------------------------------*/
+h1.logo{background:@sprite no-repeat; width:329px; height:107px; margin:70px 0 35px; .noTxt;}
+
+
+
+
+/*-------------------------------------------------------
+CONTENT
+-------------------------------------------------------*/
+.content{
+	width					: 100%;
+	min-width			: 1024px;
+	padding				: 0 0 65px;
+	.blk;
+
+
+	& > .inner{
+		.grid35;
+		.cntr;
+		min-width		: 980px;
+		.box-sizing	(border-box);
+	}
+	
+	
+	aside{
+	
+		.banner{margin:0 0 28px;}
+	}
+}
+    
+
+section,
+article{
+	.box-sizing				(border-box);
+}
+
+
+	
+/*-------------------------------------------------------
+FOOTER
+-------------------------------------------------------*/
+.footer{
+	width							: 100%;
+	.blk;
+	
+	
+	& > .inner{
+		.grid35;
+		.cntr;
+		padding					: 0 0 35px;
+		.blk;
+		.box-sizing			(border-box);
+	}
+	
+	
+	.copy{font-size:11px; top:-13px; .lft;
+	
+		span{margin:0 0 7px; .blk;}
+	}
+	
+	
+	.share{border-top:solid 1px #CCC; .grid29; padding:7px 0 0; .rgt;}
+	
+	
+	.follow_btn{color:#424251; border:solid 1px transparent; font-weight:400; padding:3px 14px; .rgt; .rounded(4px);}
+	.follow_btn:hover{background:#E8F0F2; border-color:#C6E9EF; color:#333; text-decoration:none;}
+	.follow_btn i{background:@sprite no-repeat -738px -238px; width:25px; height:25px; margin:0 0 0 5px; vertical-align:middle; .iBlk;}
+	
+	
+	& > .bottom{background:#040404; width:100%; padding:12px 0;
+	
+		i{background:@sprite no-repeat -11px -403px; width:221px; height:20px; .cntr; .blk;}
+	}
+}
+
+
+
+
+
+
