@@ -1,0 +1,338 @@
+
+
+
+/************************************
+*
+* NAVIGATION
+*
+************************************/
+nav{.blk; z-index:9999;
+
+	/*-------------- DROPDOWN --------------*/
+	// Menu with multiple sub levels
+	
+	& > ul.dropdown{
+		.gradient > .vertical			(#657078, #4E5A63);
+		font-size						: 0;
+		display							: table;
+		.rounded						(5px);
+		.box-shadow						(0 1px 2px fade(#FFF,70%) inset);
+		
+		
+		& > li{
+			border-right				: solid 1px #777;
+			.txtCntr;
+			.iBlk;
+			.box-shadow					(1px 0 0 fade(#FFF,20%) inset);
+		}
+		
+		& > li:last-child,
+		& > li.last-child{
+			border-right				: none;
+		}
+		
+			& > li > a{
+				color					: #EDF2F6;
+				font-size				: 13px;
+				font-weight				: bold;
+				white-space				: nowrap;
+				padding					: 10px 16px;
+				.blk;
+				.text-shadow			(0 -1px 0 #333);
+				.transition				(.2s);
+			}
+				
+				& > li:hover > a{
+					background			:#4E5A63;
+					color				:#F5F8FA;
+					text-decoration		:none;
+					.box-shadow			(0 -3px 10px 3px fade(#333,50%) inset);
+				}
+			
+			& > li:first-child a,
+			& > li.first-child a{
+				.border-radius			(5px, 0, 0, 5px);
+			}
+			
+			& > li:last-child a,
+			& > li.last-child a{
+				.border-radius			(0, 5px, 5px, 0);
+			}
+			
+			
+			
+		// SUB NAV 2nd LEVEL
+		& > li > ul{
+			.gradient > .vertical		(#657078, #4E5A63);
+			padding						: 7px;
+			top							: 38px;
+			position					: absolute;
+			.blk;
+			.border-radius				(0, 0, 5px, 5px);
+			.box-shadow					(0 8px 10px -5px fade(#000,60%) inset);
+			visibility					: hidden;
+			.opacity					(0);
+			.transition					(.2s);
+			.box-sizing					(border-box);
+			
+		
+			li{
+				border-bottom			: solid 1px #777;
+				border-right			: none;
+				padding					: 0;
+				.blk;
+				.box-shadow				(none);
+			}
+			
+			li:last-child,
+			li.last-child{
+				border-bottom			: none;
+			}
+			
+			
+				li > a{
+					color				: #EDF2F6;
+					font-size			: 13px;
+					font-weight			: bold;
+					white-space			: nowrap;
+					padding				: 7px 14px;
+					.blk;
+					.text-shadow		(0 -1px 0 #333);
+					.transition			(.2s);
+				}
+					li:hover > a{
+						background		: #455058;
+						color			: #F5F8FA;
+						text-decoration	: none;
+					}
+				
+				li:first-child a,
+				li.first-child a{
+					.border-radius		(0);
+				}
+				
+				li:last-child a,
+				li.last-child a{
+					.border-radius		(0);
+				}
+				
+				
+			// SUB NAV 3nd LEVEL	
+			ul{
+				.gradient > .vertical		(#657078, #4E5A63);
+				margin						: 0 0 0 100%;
+				padding						: 7px;
+				left						: 7px;
+				right						: auto!important;
+				top							: 0;
+				position					: absolute;
+				.rounded					(5px);
+				.box-shadow					(8px 0 10px fade(#000,15%) inset);
+				visibility					: hidden;
+				.opacity					(0);
+				.transition					(.2s);
+				.box-sizing					(border-box);
+			}
+			
+		}
+		
+		
+		li:hover > ul{
+			visibility					: visible;
+			.opacity					(100);
+		}
+		
+		li:last-child:hover > ul{
+			right						: 0;
+		}
+	
+	}
+
+	
+	
+	
+	
+	
+	/*-------------- DROPDOWN HORIZONTAL --------------*/
+	// Menu with horizontal sub level. Only one sublevel.
+	
+	& > ul.dropdown_horz{
+		.gradient > .vertical			(#657078, #4E5A63);
+		font-size						: 0;
+		display							: table;
+		table-layout					: fixed;
+		.border-radius					(5px, 5px, 0, 0);
+		.box-shadow						(0 1px 2px fade(#FFF,70%) inset);
+		
+		
+		& > li{
+			border-right				: solid 1px #777;
+			.txtCntr;
+			display						: table-cell;
+			.box-shadow					(1px 0 0 fade(#FFF,20%) inset);
+		}
+		
+		& > li:last-child,
+		& > li.last-child{
+			border-right				: none;
+		}
+		
+			& > li > a{
+				color					: #EDF2F6;
+				font-size				: 13px;
+				font-weight				: bold;
+				white-space				: nowrap;
+				padding					: 10px 16px;
+				.blk;
+				.text-shadow			(0 -1px 0 #333);
+				.transition				(.2s);
+			}
+				
+				& > li:hover > a{
+					background			:#4E5A63;
+					color				:#F5F8FA;
+					text-decoration		:none;
+					.box-shadow			(0 -3px 10px 3px fade(#333,50%) inset);
+				}
+			
+			& > li:first-child a,
+			& > li.first-child a{
+				.border-radius			(5px, 0, 0, 5px);
+			}
+			
+			& > li:last-child a,
+			& > li.last-child a{
+				.border-radius			(0, 5px, 5px, 0);
+			}
+			
+			
+			
+		// SUB NAV 2nd LEVEL
+		& > li > ul{
+			.gradient > .vertical		(#657078, #4E5A63);
+			.txtLft;
+			width						: 100%;
+			left						: 0;
+			top							: 38px;
+			position					: absolute;
+			.blk;
+			.border-radius				(0, 0, 5px, 5px);
+			.box-shadow					(0 8px 10px -5px fade(#000,60%) inset);
+			visibility					: hidden;
+			.opacity					(0);
+			.transition					(.2s);
+			.box-sizing					(border-box);
+			
+		
+			li{
+				padding					: 0;
+				.iBlk;
+				.box-shadow				(none);
+			}
+			
+			li:last-child,
+			li.last-child{
+				border-bottom			: none;
+			}
+			
+			
+				li > a{
+					color				: #EDF2F6;
+					font-size			: 13px;
+					font-weight			: bold;
+					white-space			: nowrap;
+					padding				: 7px 14px;
+					.blk;
+					.text-shadow		(0 -1px 0 #333);
+					.transition			(.2s);
+				}
+					li:hover > a{
+						background		: #455058;
+						color			: #F5F8FA;
+						text-decoration	: none;
+					}
+				
+				li:first-child a,
+				li.first-child a{
+					.border-radius		(0);
+				}
+				
+				li:last-child a,
+				li.last-child a{
+					.border-radius		(0);
+				}
+			
+		}
+		
+		
+		li:hover > ul{
+			visibility					: visible;
+			.opacity					(100);
+		}
+		
+		li:last-child:hover > ul{
+			right						: 0;
+		}
+	
+	}
+	
+	
+
+	
+	
+	/*-------------- FLUID NAV --------------*/
+	& > ul.fluid_nav{
+		.gradient > .vertical			(#657078, #4E5A63);
+		.grid24;
+		display							: table;
+		table-layout					: fixed;
+		.rounded						(5px);
+		.box-shadow						(0 1px 2px fade(#FFF,70%) inset);
+		
+		
+		& > li{
+			border-right				: solid 1px #777;
+			width						: 100%;
+			.txtCntr;
+			display						: table-cell;
+			.box-shadow					(1px 0 0 fade(#FFF,20%) inset);
+		}
+		
+		& > li:last-child,
+		& > li.last-child{
+			border-right				: none;
+		}
+		
+			& > li > a{
+				color					: #EDF2F6;
+				font-size				: 13px;
+				font-weight				: bold;
+				white-space				: nowrap;
+				padding					: 10px 0;
+				.blk;
+				.text-shadow			(0 -1px 0 #333);
+				.transition				(.2s);
+			}
+				
+				& > li > a:hover{
+					background			:#4E5A63;
+					color				:#F5F8FA;
+					text-decoration		:none;
+					.box-shadow			(0 -3px 10px 3px fade(#333,50%) inset);
+				}
+			
+			& > li:first-child a,
+			& > li.first-child a{
+				.border-radius			(5px, 0, 0, 5px);
+			}
+			
+			& > li:last-child a,
+			& > li.last-child a{
+				.border-radius			(0, 5px, 5px, 0);
+			}
+					
+	}
+	
+	
+	
+}
