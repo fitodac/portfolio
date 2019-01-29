@@ -1,0 +1,52 @@
+
+#home{z-index: 1;}
+.navbar.nav-transparent{height: 0; z-index:2;}
+.navbar.nav-slide{z-index:4;}
+#contact{z-index:3;}
+
+
+.navbar-header{float:none !important;}
+
+.navbar .navbar-brand{margin-left:auto !important; margin-right:auto !important; padding:0 !important; font-size:0 !important; line-height:0; display:none; border-radius:0; float:none !important;}
+
+.navbar.nav-transparent .navbar-brand{background:url('../images/czeraniuk-flick-brand.png') no-repeat; width:260px; height:170px;}
+
+.navbar.nav-slide .navbar-brand{background:url('../images/czeraniuk-flick-brand-alt.png') no-repeat; width:172px; height:110px; margin:10px auto 20px !important;}
+
+
+
+.scroll-down{margin-left: -100px;}
+
+.scroll-down a{color:#FFF;}
+
+.scroll-down span{
+	background: transparent;
+	border-top-right-radius: 27px;
+	border-top-left-radius: 27px;
+	border-bottom-right-radius: 27px;
+	border-bottom-left-radius: 27px;
+	width:25px;
+	height:25px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto 10px;
+	border: 2px solid #c8c8c8;
+}
+
+.scroll-down span [class*="icon-"]{font-size: 15px; line-height: 0; top:-2px; position: relative;}
+
+
+#contact_form{margin-top:30px;}
+
+
+.site-footer .copyright {font-size:12px; color:#fff;}
+.whitelogo{margin:0 auto; text-align:center; display:block; width:160px;}
+
+
+#map{width:100%; height:400px; margin:0 0 50px; display:block;}
+
+
+.footerpadding{min-height:287px !important;}
+
+

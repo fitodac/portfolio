@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <title>Czeraniuk & Flick Asociados</title>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="author" content="Sprintheme">
+ <meta charset="UTF-8"/>
+ <meta https-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ 
+ <link rel="icon" type="image/ico" href="images/favicon.png"/>
+ 
+ <link href="lib/isotope/css/style.css" rel="stylesheet"/>
+ <link href="lib/fontello/css/fontello.css" rel="stylesheet"/>
+ <link href="style.css" rel="stylesheet"/>
+
+ <link href="css/color-titian.css" rel="stylesheet"/>
+ <link href="css/czeraniuk-flick.css" rel="stylesheet"/>
+
+ <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+ <link href="css/jquery.bxslider.css" rel="stylesheet" />
+ <link href="css/sequencejs.css" rel="stylesheet"/>
+
+ <!-- Fav and touch icons -->
+ <link rel="shortcut icon" href="images/ico/favicon.ico">
+ <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- Just for debugging purposes. Don't actually copy this line! -->
+	
+	<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	
+	<!--[if lt IE 9]>
+	
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	
+	    <![endif]-->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/bx-responsive.js"></script>
+	<script src="js/jquery.cycle2.js"></script> 
+	<script src="js/jquery.cycle2.carousel.js"></script> 
+	<script src="js/animation.js"></script> 
+	<script src="https://jquery.bassistance.de/validate/jquery.validate.js"></script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function() {
+				
+			jQuery("#contact_form").validate({  // initialize the plugin                 
+				errorElement: 'div',
+		    errorClass: 'error',
+				rules: {
+					firstname: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					message: {
+						required: true,
+						minlength: 2
+					},
+				},
+				messages: {
+					firstname: {
+						required: "Porfavor, escribe tu nombre",
+						minlength: "Tu nombre debe tener mas de 2 caracteres"
+					},
+					email: "La dirección de email debe ser válida",
+					message: {
+						required: "Porfavor, escribe el mensaje",
+						minlength: "El mensaje debe tener mas de 2 caracteres"
+					}
+				},
+				debug: true,
+				submitHandler: function(form){
+					$.ajax({
+						type: "POST",
+						url: "contact.php",
+						data: {
+							firstname : $('#inputName').val(),
+							email : $('#inputEmail').val(),
+							title : $('#inputTitle').val(), 
+							message : $('#inputMessage').val() 
+						},
+						success: function(data){
+							if (data) {
+								//alert(data);
+								$('#email_message').html(data);
+							}
+							/*
+		 else {
+								console.log(data); //testing purposes
+							}
+		*/
+							form.reset();
+						}
+					});
+				}                            
+			});
+		
+		});
+		
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head>
+
+
+<body class="home" data-body-class="titan">
+
+	<!-- Start Header section -->
+	<header class="navbar navbar-default navbar-fixed-top nav-transparent" role="navigation" id="navbar-top">
+		<a class="navbar-brand" href="index.html">Czeraniuk & Flick Asociados</a>
+	</header>
+	<!-- End Header section --> 
+	
+	
+	
+	<!--Start Slide Show section-->
+	
+	<section class="content-section home-slideshow" id="home">
+		<span class="rect-slide-nav left">
+			<a href="#" id="slide-prev"><i class="icon-left-open-big"></i></a>
+		</span>
+	  
+	  <ul class="cycle-slideshow" data-cycle-timeout="5000" data-cycle-slides="> li" data-cycle-next="#slide-next" data-cycle-prev="#slide-prev" data-cycle-carousel-fluid=true data-cycle-speed="4000">
+	    <li style="background-image: url('images/slideshow/czeraniuk&flick_slide_00.jpg')"></li>
+	    <li style="background-image: url('images/slideshow/czeraniuk&flick_slide_01.jpg')"></li>
+	    <li style="background-image: url('images/slideshow/czeraniuk&flick_slide_02.jpg')"></li>
+	    <!-- <li style="background-image: url('images/slideshow/czeraniuk&flick_slide_03.jpg')"></li> -->
+	  </ul>
+	  
+	  <span class="rect-slide-nav right"> 
+	  	<a href="#" id="slide-next">
+	  		<i class="icon-right-open-big"></i>
+	  	</a> 
+	  </span>
+	  <span class="scroll-down">
+	  	<a href="#contact">
+	  		<span><i class="icon-down-open-big"></i></span> Contácte con nosotros
+	  	</a>
+	  </span>
+	</section>
+	
+	<!--End Slide Show section--> 
+	
+	
+	
+	
+	<!--Contact Start-->
+	<section class="content-section contact-section" id="contact">
+	  <div class="container">
+	    <div class="row">
+	        <hgroup class="heading1">
+	          <h1>Contáctenos</h1>
+	          <div class="headingUline"></div>
+	          <p class="text-center">Escríbanos con el siguiente formulario y nos pondremos en contacto con Usted a la brevedad posible.</p>
+	        </hgroup>
+	
+	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        <form class="form-horizontal" role="form" id="contact_form" action="contact.php">
+	          <div class="form-group">
+	            <label for="inputName" class="col-sm-3 control-label"> Nombre<span class="req">*</span> </label>
+	            <div class="col-sm-9">
+	              <input type="text" class="form-control input-lg" id="inputName" name="firstname" required>
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label for="inputEmail" class="col-sm-3 control-label"> Email<span class="req">*</span> </label>
+	            <div class="col-sm-9">
+	              <input type="email" class="form-control input-lg" id="inputEmail" name="email" required>
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label for="inputTitle" class="col-sm-3 control-label"> Asunto<span class="req"></span> </label>
+	            <div class="col-sm-9">
+	              <input type="text" class="form-control input-lg" id="inputTitle" name="title">
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <label for="inputMessage" class="col-sm-3 control-label"> Mensaje<span class="req">*</span> </label>
+	            <div class="col-sm-9">
+	              <textarea class="form-control" id="inputMessage" name="message" rows="9" required></textarea>
+	              <div id="email_message" style="color: red; padding-top: 15px;"></div>
+	            </div>
+	          </div>
+	          <div class="form-group">
+	            <div class="col-sm-offset-3 col-sm-9">
+	              <button type="submit" class="btn btn-default btn-lg">Enviar</button>
+	            </div>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+	        <hgroup>
+	          <h3>Dónde encontrarnos</h3>
+	        </hgroup>
+	        <p> <i class="icon-location-5"></i> Dirección: 25 de Mayo 678 esquina Independencia </p>
+	        <p> <i class="icon-mobile"></i> Teléfono: (071) 202 031 / 205 608 </p>
+	        <p> <i class="icon-email"></i> Email: <a href="mailto:contacto@czeraniuk.com">contacto@czeraniuk.com</a> <br/> 
+	        			<a href="mailto:asesoriajuridica@trociuk.com" style="margin-left:95px;"> asesoriajuridica@trociuk.com</a> 
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	<!--Contact end-->
+	
+	<!--map start-->
+	<section>
+		<div id="map"></div>
+		<!-- <iframe class="gmap" src="https://mapsengine.google.com/map/embed?mid=zpxnDajdbrF4.kPIA_hJHKmyA" width="640" height="480"></iframe> -->
+	</section>
+	<!--map end-->
+	
+
+	<!--Footer Start-->
+	<div class="footerpadding"></div>
+	<footer class="site-footer">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12 text-center">
+	      	<img src="images/czeraniuk-flick-brand-white.png" class="whitelogo"/>
+	        <p>&nbsp;</p>
+	        <p class="copyright">&copy; 2014 Czeraniuk & Flick Asocialdos.  Todos los derechos reservados</p>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
+	<!--Footer end-->
+	
+	<!--Begin Scroll top-->
+	<div id="scroll-up" class="scroll-up"><i class="icon-up-open-big"></i></div>
+	<!--End Scroll top--> 
+	
+	
+		<!-- Bootstrap core JavaScrdipt
+		================================================== --> 
+		<!-- Placed at the end of the document so the pages load faster --> 
+		
+		<script src="js/jquery.easing.1.3.min.js"></script> 
+		<script src="lib/bootstrap/js/transition.js"></script> 
+		<script src="lib/bootstrap/js/alert.js"></script> 
+		<script src="lib/bootstrap/js/modal.js"></script> 
+		
+		<!--<script src="lib/bootstrap/js/dropdown.js"></script>--> 
+		
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+		<script src="lib/bootstrap/js/twitter-bootstrap-hover-dropdown.js"></script> 
+		<script src="lib/bootstrap/js/scrollspy.js"></script> 
+		<script src="lib/bootstrap/js/affix.js"></script> 
+		<script src="lib/bootstrap/js/tab.js"></script> 
+		<script src="lib/bootstrap/js/button.js"></script> 
+		<script src="lib/bootstrap/js/collapse.js"></script> 
+		<script src="lib/isotope/js/jquery.isotope.min.js"></script> 
+		
+		<script src="js/jquery.parallax-1.1.3.js"></script> 
+		<script src="js/gmap3.min.js"></script> 
+		<script src="js/custom-script.js"></script> 
+		
+		<script src="js/jquery.validate.js"></script>
+	</body>
+</html>
