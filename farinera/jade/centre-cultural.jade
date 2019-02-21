@@ -1,0 +1,171 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Centre Cultural'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'centre-cultural'
+
+
+
+include partials/_card-category.jade
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b
+			h1.display-3.text-center.m-b-lg CENTRE CULTURAL#[br]LA FARINERA DEL CLOT
+
+
+
+		section.bg-white.p-y-lg.m-b-md-2
+			.container
+				strong.
+					EL CENTRE CULTURAL LA FARINERA DEL CLOT ÉS UN EQUIPAMENT 
+					DE TITULARITAT MUNICIPAL GESTIONAT PER LA FEDERACIÓ D’ENTITATS 
+					DEL CLOT-CAMP DE L’ARPA A TRAVÉS D’UN MODEL DE #[span.text-primary GESTIÓ CÍVICA].
+
+
+
+		.container.p-b-lg
+			.row.p-b-md
+				.col-sm-6
+					img.img-responsive(src="#{imgPath}06.png")
+					.height-5.visible-ms.visible-xs
+
+
+				.col-sm-6
+					.m-b-lg
+						.h4 DE FÀBRICA DE FARINA A FÀBRICA DE CULTURA
+						p.
+							Des del 1999, la Farinera és un espai de creació 
+							cultural, un nexe de trobada i punt de partida 
+							entre persones creadores i espectadores. Una 
+							fàbrica de creació i difusió d’arts escèniques, 
+							musicals i audiovisuals.
+
+
+					.m-b-lg
+						.h4 ARRELADA AL TERRITORI
+						p.
+							El marc principal d’actuació: el barri del 
+							Clot – Camp de l’Arpa. Reivindicada històricament 
+							pel teixit associatiu, l’actual Farinera participa 
+							i dóna suport al calendari festiu anual del barri; 
+							als actes de cultura popular del territori i 
+							participa en la construcció de projectes comunitaris. 
+							Tot plegat sense oblidar una perspectiva creativa 
+							cultural de ciutat.
+
+
+
+			.row
+				.col-sm-6.col-sm-push-6
+					img.img-responsive(src="#{imgPath}07.png")
+					.height-5.visible-ms.visible-xs
+
+
+				.col-sm-6.col-sm-pull-6
+					.m-b-lg
+						.h4 CULTURA I ACCESSIBILITAT
+						p.
+							La cultura com a mecanisme de transformació social 
+							i d’acció col·lectiva. La cultura més enllà de la 
+							creació; entesa com la interacció, els enllaços 
+							artístics quotidians de la comunitat. Des de la 
+							Farinera s’aposta per un model de cultura de proximitat 
+							i de qualitat, sense barreres d’accessibilitat.
+
+
+					.m-b-lg
+						.h4 ENTENDRE D’ON VENIM PER SABER ON ANEM
+						p.
+							La Farinera és plena de petjades que reivindiquen 
+							el seu passat industrial, la memòria històrica d’un 
+							edifici i d’un barri. I és que l’edifici data de 
+							1908 quan l’arquitecte Josep Pericàs i Morros va 
+							aixecar una de les anomenades “fàbriques de pisos” 
+							que albergava la Casa Harinera de San Jaime S.A, 
+							que va estar produint farina fins el 1991. Va ser 
+							al 1995 quan l’Ajuntament de Barcelona la va comprar 
+							encarregant la seva rehabilitació a Carles San Feliu 
+							i Josie Abascal. La intervenció arquitectònica va 
+							ser guardonada amb el Premi Bonaplata uns mesos 
+							després de la seva inauguració com a centre cultural 
+							el maig de 1999.
+
+
+
+		.container
+			.h2.text-primary.text-center.fw-800.m-b-md SERVEIS
+
+		section.bg-white.p-y-md.m-b-md-2
+			.container
+				.row
+					.col-sm-6
+						ul.text-right.font-secondary.fw-700(dir="rtl")
+							li Servei de Bar i Cafeteria
+							li Wi-fi
+							li Punt d’informació i atenció a la ciutadania
+
+					.col-sm-6
+						ul.font-secondary.fw-700
+							li Cessió d’espais i materials
+							li Assessorament a les entitats
+							li Punt d’Informació i Atenció a la Dona de Sant Martí (PIAD)
+
+
+
+
+		.container
+			.h2.text-primary.text-center.fw-800.m-b-md ENTITATS I COMISSIONS ACOLLIDES
+
+		section.bg-white.p-y-md.m-b-md-2
+			.container
+				.row
+					.col-sm-10.col-sm-offset-1
+						.row
+							.col-md-6
+								a.btn.btn-contrast.btn-block.text-right(href="#") Federació d’Entitats del Clot-Camp de l’Arpa
+								a.btn.btn-contrast.btn-block.text-right(href="#") Associació Teatral el Partiquí
+								a.btn.btn-contrast.btn-block.text-right(href="#") Banc del Temps de Sant Martí
+
+							.col-md-6
+								.p-t.hidden-lg
+								a.btn.btn-contrast.btn-block.text-left(href="#") Associació d’artistes del Clot-Camp de l’Arpa
+								a.btn.btn-contrast.btn-block.text-left(href="#") Taller d’Història del Clot-Camp de l’Arpa
+								a.btn.btn-contrast.btn-block.text-left(href="#") Mercat Solidari
+
+
+		section.bg-white.p-y-md.m-b-md-2
+			.container-fluid.row.row-images
+				.col-sm-4.col-ms-6.p-0
+					img.img-responsive(src="https://unsplash.it/800/440")
+				.col-sm-2.col-ms-6.p-0
+					img.img-responsive(src="https://unsplash.it/400/440")
+				.col-sm-4.col-ms-6.p-0
+					img.img-responsive(src="https://unsplash.it/800/440")
+				.col-sm-2.col-ms-6.p-0
+					img.img-responsive(src="https://unsplash.it/400/440")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

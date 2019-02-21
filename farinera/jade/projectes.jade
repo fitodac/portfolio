@@ -1,0 +1,85 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Projectes'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'projectes'
+
+
+
+mixin card(title, content)
+	.card.card-horz.height-20
+		.col-flex-5
+			.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+
+
+		.col-flex-7
+			.card-block
+				.h4: a(href="#") #{title}
+
+				.fz-80
+					p #{content}
+
+
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg-2
+			h1.display-3.text-center.m-b-lg PROJECTES
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") CICLES
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") CONVOCATÒRIES
+
+
+			.p-b-lg-2.visible-sm
+
+
+
+		section.bg-white.p-t-md.p-b-sm.m-b-lg-3
+			.container
+				.row
+					.col-sm-4
+						img.img-responsive.img-rotated(src="#{imgPath}02.jpg" style="margin: -90px 0;")
+
+					.col-sm-8
+						p.
+							El Centre Cultural la Farinera del Clot ofereix una programació 
+							cultural diversa amb activitats de tot tipus. Amb el temps algunes 
+							propostes han anat agafant força fins al punt de consolidar-se.
+
+
+
+		.container.m-b-lg-2
+			.row
+				.col-sm-6
+					+card('Caliu', 'La música dóna caliu a les nits d’hivern a la Farinera. Cicle musical els dissabtes de gener, febrer i març, amb propostes on la posada escènica pren relleu.')
+					+card('Say it Loud', '‘Black music & Black Power’. La música negra omple la Farinera en un dels cicles més consolidats i amb formats més variats. Exposicions, concerts, marató reggae i activitats paral·leles amb cartell internacional.')
+					+card('Diumenges familiars', 'Matinals de teatre per a tots els públics un diumenge al mes. Combinació de programació de teatre, titelles, teatre musical i nous formats amb espectacles de qualitat orientats a la promoció de la cultura escènica als més petits de casa.')
+
+
+				.col-sm-6
+					+card('Endorfines', 'Cicle d’Humor i d’Estiu a la terrassa del Centre Cultural. Les hormones de la felicitat s’instal·len durant els dijous de juliol a l’exterior de la Farinera amb espectacles còmics, gestuals on el clown i el circ en són els protagonistes.')
+					+card('Muses', 'La visualització del paper de les dones creadores és el leitmotiv de Muses, un cicle on hi tenen cabuda les arts escèniques, visuals, experimentals i musicals que se celebra la darrera setmana del mes de novembre.')
+					+card('Amplifica’t', 'Concurs de bandes novelles de Sant Martí. Proposta conjunta dels centres cívics del Districte per a la promoció de la música jove amb una convocatòria amb premis importants, que fins a l’actualitat ha servit per aflorar els nous talents de la ciutat.')
+
+
+
+
+
+
+
+
+
+
+
+
+

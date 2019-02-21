@@ -1,0 +1,35 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Espais (Sollicitud)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'espais-sollicitud'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md
+			h1.display-3.text-center.m-b-lg ESPAIS
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") ESPAIS
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") NORMATIVA
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") TARIFES
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") SOL·LICITUD
+
+
+		.container.p-y-lg-2
+			.h1.text-center Hi estic treballant!
+
+
+
+
+
+
+

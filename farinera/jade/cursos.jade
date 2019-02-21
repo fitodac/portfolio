@@ -1,0 +1,79 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Cursos I Tallers'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'cursos'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md
+			h1.display-3.text-center.m-b-lg CURSOS I TALLERS
+
+
+		section.bg-white.text-center.p-y-md.m-b-lg-2
+			.container
+				.row
+					.col-sm-8.col-sm-offset-2
+						p.
+							Al Centre Cultural la Farinera del Clot trobaràs una 
+							oferta de cursos i tallers trimestrals amb els que 
+							podràs aprendre, gaudir o provar activitats de cos, 
+							teatre, dansa, art i habilitats.
+
+						.h3.text-primary Període d'inscripcions
+						p.
+							Et pots inscriure presencialment o online del 27 de 
+							març al 5 d'abril de 2017. Els tallers s'impartiran 
+							durant els mesos d'abril, maig i juny de 2017
+
+						a.btn.btn-primary(href="#") INSCRIPCIONS ONLINE
+
+
+
+		.container
+			.row
+				.col-sm-4
+					.curso--thumbnail
+						span Cos
+
+
+				.col-sm-4
+					.curso--thumbnail
+						span Dansa
+
+
+				.col-sm-4
+					.curso--thumbnail
+						span Art i creació
+
+
+
+			.row
+				.col-sm-4.col-sm-offset-2
+					.curso--thumbnail
+						span Teatre
+
+
+				.col-sm-4
+					.curso--thumbnail
+						span Habilitats i Coneixements
+
+
+			.p-b-lg-2
+
+
+
+
+
+
+
+
+
+

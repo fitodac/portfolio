@@ -1,0 +1,122 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Gestió'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'gestio'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg-2
+			h1.display-3.text-center.m-b-lg GESTIÓ
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") GESTIÓ
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") ENTITATS
+
+
+
+		section.bg-white.p-y-lg.m-b-md
+			.container
+				.row
+					.col-sm-4
+						img.img-responsive.img-rotated(src="#{imgPath}02.jpg" style="margin: -60px 0;")
+
+					.col-sm-8
+						h3.text-primary FEDERACIÓ D’ENTITATS DEL CLOT CAMP DE L’ARPA
+						p.
+							La Federació d’Entitats del Clot-Camp de l’Arpa (FECCA) és una 
+							entitat de segon grau, que aglutina la majoria d’associacions 
+							del barri. Amb el temps s’ha convertit en un agent essencial en 
+							la construcció d’espais de participació i en la dinamització 
+							socio-cultural del Clot-Camp de l’Arpa. L’objectiu final de FECCA 
+							és afavorir l’associacionisme treballant en xarxa per la millora 
+							del territori i de la qualitat de vida del veïnat en tots els àmbits.
+
+						a.btn.btn-primary(href="#") DOCUMENT
+
+
+
+		section.bg-white.p-y-lg.m-b-lg
+			.container
+				h3.text-primary MODEL DE GESTIÓ
+				p.
+					El Centre Cultural la Farinera del Clot i el Casal de Barri Espai 
+					Antoni Miró Peris estan gestionats, a través del model de gestió 
+					cívica o ciutadana, per la Federació d’Entitats del Clot-Camp de 
+					l’Arpa (FECCA). L’entitat, representativa del teixit associatiu del 
+					territori, amb capacitat per a gestionar i amb un projecte al darrera, 
+					signa un conveni amb l’Administració per la gestió dels dos equipaments 
+					seguint les bases reguladores de la gestió cívica o ciutadana. Aquest 
+					acord en el cas de la Farinera és renovable cada 4 anys i de 
+					periodicitat bianual en el cas de l’EAMP.
+
+
+		.container
+			.p-b-md
+				.page-header
+					.h2 Transparència
+				p.
+					Descarregueu-vos la memòria de gestió i activitats dels dos 
+					centres així com els documents de la seva situació econòmica. 
+
+				.row
+					.col-sm-5
+						p: strong CENTRE CULTURAL LA FARINERA DEL CLOT
+						.m-b-sm
+							a.btn.btn-primary.btn-sm(href="#") BALANÇ I PRESSUPOST ECONÒMIC
+						a.btn.btn-primary.btn-sm(href="#") MEMÒRIA
+
+					.col-sm-5
+						p: strong CASAL DE BARRI ESPAI ANTONI MIRÓ PERIS
+						.m-b-sm
+							a.btn.btn-primary.btn-sm(href="#") BALANÇ I PRESSUPOST ECONÒMIC
+						a.btn.btn-primary.btn-sm(href="#") MEMÒRIA
+
+
+
+
+			.page-header
+				.h2 Dades contacte Federació
+
+			.row
+				.col-sm-6
+					p.
+						Adreça: #[br]
+						(Centre Cultural la Farinera del Clot)#[br]
+						Gran Via de les Corts Catalanes, 837#[br]
+						08018 – Barcelona
+
+					p Telèfon: 93 291 80 80
+
+					p Correu electrònic: secretariafederacio@gmail.com
+
+					p.
+						Twitter: @ClotFede#[br]
+						Facebook: @entitats.clotcampdelarpa
+ 
+
+				.col-sm-6.text-right
+					.suscribe.form-group.pull-right
+							.input-group
+								.input-group-btn
+									button.btn.btn-default(type="button")
+										svg.icon-envelope: use(xlink:href="#ico-envelope")
+								input.form-control.input-lg(type="email" placeholder="Subscriu-te al newsletter de la Farinera")
+
+
+
+
+
+
+
+
+
+

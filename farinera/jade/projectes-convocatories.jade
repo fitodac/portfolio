@@ -1,0 +1,94 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Projectes (convocatories)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'projectes-convocatories'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg
+			h1.display-3.text-center.m-b-lg PROJECTES
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") CICLES
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") CONVOCATÒRIES
+
+
+
+		section.bg-white.p-y-lg.m-b-md-3
+			.container.text-center
+				El suport a la creació és una de les línies de treball més 
+				importants de la Farinera. Tant les arts escèniques com 
+				les arts visuals es treballen a través de convocatòries, 
+				obrint les portes del Centre a artistes amateurs i professionals.
+
+
+
+		.container.p-b-lg
+			.card.card-horz
+				.col-flex-5
+					.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+
+
+				.col-flex-7
+					.card-block
+						.h3.p-y Arts#[br]Escèniques
+
+						.row.flex.flex-end.flex-sm-column
+							.col-sm-8.fz-90
+								p.card-text.
+									La Farinera aposta per un projecte de creació 
+									escènica amb la cessió d’espais i el suport 
+									tècnic a companyies tant amateurs com professionals.
+								p.card-text.
+									Una fàbrica de creació constant on les companyies, 
+									a través d’una convocatòria trimestral, poden optar 
+									a una de les places de contraprestació i estrena de 
+									nous espectacles escènics.
+
+							.col-sm-4
+								.height-5.visible-ms.visible-xs
+								a.btn.btn-primary.btn-block(href="#") AMPLIAR
+
+
+
+			.card.card-horz
+				.col-flex-5
+					.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+
+
+				.col-flex-7
+					.card-block
+						.h3.p-y Arts#[br]Escèniques
+
+						.row.flex.flex-end.flex-sm-column
+							.col-sm-8.fz-90
+								p.card-text.
+									La Farinera aposta per un projecte de creació 
+									escènica amb la cessió d’espais i el suport 
+									tècnic a companyies tant amateurs com professionals.
+								p.card-text.
+									Una fàbrica de creació constant on les companyies, 
+									a través d’una convocatòria trimestral, poden optar 
+									a una de les places de contraprestació i estrena de 
+									nous espectacles escènics.
+
+							.col-sm-4
+								.height-5.visible-ms.visible-xs
+								a.btn.btn-primary.btn-block(href="#") AMPLIAR
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Gestió (entitats)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'gestio-entitats'
+
+
+
+mixin card(w,h)
+	.card.card-divided
+		.card-block
+			.row.flex.flex-center
+				.col-sm-4
+					img.img-responsive(src="https://unsplash.it/#{w}/#{h}")
+				.col-sm-8
+					.h3 Associació d’Artistes del Clot-Camp de l’Arpa
+					a.btn.btn-primary(href="#") VISITAR
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg-2
+			h1.display-3.text-center.m-b-lg GESTIÓ
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") GESTIÓ
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") ENTITATS
+
+
+
+
+		.container
+			+card(400,220)
+			+card(401,220)
+			+card(402,220)
+			+card(403,220)
+			
+
+
+
+
+
+
+
+
+

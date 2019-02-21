@@ -1,0 +1,94 @@
+
+
+nav.navbar.navbar-alt
+	.topbar
+		.container
+
+			.social
+				a(href="#")
+					span.sr-only facebook
+					svg: use(xlink:href="#ico-facebook")
+
+				a(href="#")
+					span.sr-only twitter
+					svg: use(xlink:href="#ico-twitter")
+
+
+		//- svg.ajuntament: use(xlink:href="#ajuntament")
+
+		a(href="#").ajuntament
+			img.hidden-xs(src="#{imgPath}ajuntament.png")
+			img.visible-xs(src="#{imgPath}ajuntament-iso.png")
+
+
+
+
+
+	.container
+		.navbar-header
+			a.navbar-brand(href="./")
+				span.sr-only #{pageTitle}
+				//- svg: use(xlink:href="#svg-brand")
+				img(src="#{imgPath}amp.png" style="height:50px;")
+
+		
+		button.navbar-toggle.collapsed(data-toggle="collapse" data-target="#main-navbar")
+
+
+
+		.collapse.navbar-collapse#main-navbar
+			ul.nav.navbar-nav
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-inici")
+						span Inici
+
+				li.nav-item.active
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-noticies")
+						span Notícies
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-agenda") 
+						span Agenda
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-tallers") 
+						span Cursos i tallers
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-espais") 
+						span Espais
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-projectes") 
+						span IMPLICA’T
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-eamp") 
+						span Eamp
+
+				li.nav-item
+					a.nav-link(href="./")
+						svg: use(xlink:href="#ico-gestio") 
+						span Gestió
+
+
+
+			a(href="#").circular
+				span VISITA LA WEB DE:
+				//- img(src="#{imgPath}antonio-miro-peris.jpg")
+				svg: use(xlink:href="#amp")
+
+
+
+
+
+
+

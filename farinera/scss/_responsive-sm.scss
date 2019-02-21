@@ -1,0 +1,206 @@
+/*-----------------------------------------------*/
+/*	RESPONSIVE
+/*	Bootstrap media queries
+/*-----------------------------------------------*/
+@media screen and (max-width: 991px) {
+
+	html{
+		font-size: 13.5px;
+	}//html
+
+
+	.navbar{
+		border: none;
+		align-items: flex-start;
+
+
+		.navbar-brand{
+			height: 130px;
+			top: -45px;
+		}//navbar-brand
+
+
+		.navbar-collapse{
+			width: 100vw;
+			margin: 0;
+			left: 0;
+			top: 40px;
+			position: absolute;
+		}//navbar-collapse
+
+
+		.navbar-collapse.collapse{
+			display: none !important;
+
+			&.in{
+				display: block !important;
+			}// in
+
+		}//navbar-collapse collapse
+		
+		.navbar-collapse.collapsing{
+			display: block !important;
+		}
+
+
+
+		.navbar-nav{
+			background: $orange;
+			border-bottom: solid 1px #fff;
+			width: 100%;
+			padding-top: 86px;
+			margin: 0;
+			display: flex;
+			flex-flow: row wrap;
+
+			.nav-item{
+				flex: 1 0 auto;
+				text-align: center;
+			}//nav-item
+			
+			.nav-link{
+				padding: 5px 10px;
+			}//nav-link
+
+		}//navbar-nav
+
+
+
+		.circular{
+			background: #fff;
+			width: 300px;
+			height: 70px;
+			padding: 15px 20px;
+			margin: 0;
+			left: auto;
+			right: 0;
+			border-radius: 600px 0 0 600px;
+
+			span{
+				padding-right: 10px;
+				display: inline-block;
+			}//span
+
+			img{
+				width: 115px;
+			}//img
+
+			&::after{
+				display: none;
+			}
+		}//circular
+
+
+
+		.navbar-toggle.collapsed{
+			display: block;
+		}
+
+
+
+		&.navbar-alt{
+
+			.navbar-nav{
+				background: #fff;
+			}
+
+			.circular{
+				background: $orange;
+
+				svg{
+					margin-top: 0;
+				}//svg
+
+				span{ top: -25px; }
+			}//circular
+
+
+			.navbar-toggle{
+				border-top-color: #fff;
+
+				&::before{ background: #fff; }
+				&::after{ background: #fff; }
+			}
+
+		}//navbar-alt
+
+
+
+	}//navbar
+
+
+
+
+
+	.card .h2, .card h2{
+		font-size: 1.8rem;
+	}
+
+
+	.entry-content{
+		padding-right: 30px;
+	}
+
+
+	.curso--thumbnail{
+		height: 230px;
+
+		span{ font-size: 1.6rem; }
+	}//curso--thumbnail
+
+
+
+
+
+	.nav-sections{
+
+		&::after{
+			content: '';
+			display: block;
+			clear: both;
+		}//::after
+
+
+		.btn{
+			width: calc(50% - 20px);
+			margin: 0 10px 10px !important;
+			float: left;
+		}//btn
+
+	}//nav-sections
+
+
+
+	svg.icon{
+		width: 28px;
+		height: 28px;
+	}//svg
+
+
+
+	.card .h4, .card h4{
+		font-size: 1.6rem;
+	}
+
+	.card .h3, .card h3{
+		font-size: 1.4rem;
+	}
+
+
+	.btn.text-right,
+	.btn.text-left{
+		text-align: center !important;
+	}
+
+
+
+	.pagination li svg.icon{
+		top: 2px;
+	}
+
+
+}//max-width: 991px
+
+
+
+

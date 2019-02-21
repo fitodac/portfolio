@@ -1,0 +1,100 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Projectes (category)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'projectes-category'
+
+
+
+include partials/_card-category.jade
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg-2
+			h1.display-3.text-center.m-b-lg PROJECTES
+
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") CICLES
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") CONVOCATÒRIES
+
+
+
+		section.bg-white.p-y-lg.m-b-md
+			.container
+				.text-center.
+					El suport a la creació és una de les línies de treball més 
+					importants de la Farinera. Tant les arts escèniques com les 
+					arts visuals es treballen a través de convocatòries, obrint 
+					les portes del Centre a artistes amateurs i professionals.
+
+
+
+		.container.m-b-lg-2
+			.page-header
+				.h2 Arts Escèniques
+
+
+			.card.card-horz.m-b-md-2(style="min-height:280px;")
+				.col-flex-5
+					.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+
+
+				.col-flex-7
+					.card-block
+						.row.flex.flex-md-column
+							.col-lg-8.col-md-7.fz-90
+								p.card-text.
+									La Farinera aposta per un projecte de creació 
+									escènica amb la cessió d’espais i el suport 
+									tècnic a companyies tant amateurs com professionals.
+								p.card-text.
+									Una fàbrica de creació constant on les companyies, 
+									a través d’una convocatòria trimestral, poden optar 
+									a una de les places de contraprestació i estrena de 
+									nous espectacles escènics.
+
+							.col-lg-4.col-md-5
+								.p-t-lg.hidden-lg
+								a.btn.btn-primary.btn-block.m-b(href="#") CONVOCATÒRIA
+								a.btn.btn-primary.btn-block.m-b(href="#") FITXA CONVOCATÒRIA
+								a.btn.btn-primary.btn-block.m-b(href="#") RIDERS
+
+
+			.h3.m-b-md Notícies relacionades
+
+			.row
+				.col-sm-6
+					+card()
+					+card()
+					+card()
+
+
+				.col-sm-6
+					+card()
+					+card()
+					+card()
+					
+
+
+
+
+
+
+
+
+
+
+
+
+

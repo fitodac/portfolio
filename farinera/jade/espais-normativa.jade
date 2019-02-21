@@ -1,0 +1,168 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Espais (normativa)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'espais-normativa'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md-2
+			h1.display-3.text-center.m-b-lg ESPAIS
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") ESPAIS
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") NORMATIVA
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") TARIFES
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") SOL·LICITUD
+
+
+
+		.container.p-b-md
+			h2.text-center NORMATIVA DE LA CESSIÓ D’ESPAIS DEL CENTRE CULTURAL LA FARINERA DEL CLOT
+
+
+			.page-header Horaris
+
+			p
+				ul
+					li Els horaris de cessió s’ajustaran als horaris d’obertura de l’equipament:
+						ul
+							li Dilluns de 9 a 22 h.
+							li Dimarts i dijous de 9.30 a 24 h.
+							li Dimecres i divendres de 9 a 24 h.
+							li Dissabtes de 10 a 14 i de 16 a 22 h.
+					li.
+						Cal tenir en compte i concretar els horaris de muntatge i desmuntatge 
+						que hauran d’estar inclosos en l’horari de la petició.
+					li.
+						Si es desitja sol·licitar un espai fora d’aquest horari caldrà fer-se 
+						càrrec del cost del servei extraordinari del personal.
+			li Les cessions es fan per fraccions mínimes de 30 minuts.
+			li L’espai ha de quedar lliure i recollit a l’hora acordada.
+
+
+
+
+			.page-header Condicions de la cessió
+
+			p.
+				Podran fer ús dels espais totes les persones, entitats i empreses els 
+				objectius de les quals no contradiguin el conveni signat entre el 
+				Districte de Sant Martí i la Federació d’Entitats del Clot-Camp de 
+				l’Arpa i que les seves activitats siguin compatibles amb la programació 
+				del Centre. No es cedirà l’ús dels espais a particulars per a fer 
+				activitats que generin ingressos particulars.
+
+			p.
+				Cap entitat pot establir la seva seu, ni el seu domicili fiscal, a l’equipament.
+
+			p.
+				La Farinera avaluarà tècnicament i econòmicament les peticions, 
+				notificant en el menor temps possible la seva autorització o denegació. 
+				També es facilitaran les condicions particulars a les quals queda sotmesa 
+				la cessió, l’import del preu públic, així com el termini i condicions de pagament.
+
+			p.
+				El Centre no es responsabilitza del material que es pugui deixar l’entitat o 
+				les persones participants als espais cedits. La Farinera no disposa d’espai 
+				d’emmagatzematge de material.
+
+
+
+
+			.page-header Procediment i reserva
+
+			p
+				ul
+					li Cal omplir totes les dades del full de sol·licitud o formulari web.
+					li.
+						El termini de presentació de les sol·licituds serà com a mínim de 10 
+						dies naturals abans de l’inici de l’activitat. No es podran fer sol·licituds 
+						amb més de 60 dies d’antelació. 
+					li.
+						L’autorització no serà efectiva fins que s’hagi liquidat la totalitat de 
+						l’import de la sala (calculat segons els preus públics vigents). S’haurà 
+						d’abonar almenys 5 dies abans de fer l’activitat a no ser que s’acordi 
+						prèviament un altre termini.
+					li.
+						En cas de prereserva, aquesta tindrà  validesa durant quinze dies. 
+						Si passat el termini l’entitat o organització no confirma, la prereserva 
+						quedarà anul·lada automàticament.
+					li.
+						La reserva de l’espai es considerarà definitiva quan la persona 
+						sol·licitant aprovi el pressupost enviat pel Centre. 
+					li.
+						No es retornaran els imports abonats pel lloguer d’un espai si no s’avisa 
+						amb una antelació mínima de 3 dies. Si l’antelació és inferior a 3 dies 
+						es cobraran els percentatges següents:
+
+						ul
+							li 72 hores d’antelació: caldrà abonar el 30 % de l’import.
+							li Inferior a 72 hores d’antelació: caldrà abonar el 70 % de l’import.
+							li El mateix dia o el dia abans de l’activitat:  caldrà abonar el 100% de l’import.
+
+			p Qualsevol incidència cal notificar-la per correu electrònic a administracio@farinera.org
+
+
+
+
+			.page-header Necessitats tècniques
+
+			p
+				ul
+					li El material tècnic necessari s’ha d’especificar en el full de sol·licitud.
+					li.
+						Els preus del lloguer del material tècnic s’especificaran en el 
+						pressupost total de la cessió d’espai. 
+					li L’ús de l’equip de so i llums del teatre requereix la contractació del tècnic del Centre.
+
+
+
+			.page-header Normes d’ús i recomanacions
+
+			p L’entitat que gaudeixi de la cessió de l’espai haurà de:
+			p
+				ul
+					li Fer-se responsable del bon ús de l’espai o equip que se li ha cedit.
+					li.
+						Fer-se càrrec del muntatge i desmuntatge de les activitats amb 
+						la supervisió del personal del Centre.
+					li Garantir l’ordre durant l’activitat i respectar els aforaments establerts.
+					li Fer-se càrrec i respondre de tots els aspectes de l’organització de l’activitat.
+					li Recollir tot el material i deixalles que s’hagin generat.
+					li Respectar la normativa que prohibeix fumar en tot l’edifici.
+					li No menjar ni beure a les sales.
+
+			p.
+				La clau dels espais no pot sortir mai de l’equipament. Cal demanar-la i 
+				retornar-la al taulell de recepció sempre que se surti del Centre. La clau 
+				només es donarà a la persona responsable de l’activitat.#[br]
+				Cal deixar l’espai tal i com s’ha trobat, parant especial atenció a la 
+				distribució del mobiliari. L’entitat sol·licitant és l’encarregada del 
+				muntatge i el desmuntatge de l’espai.
+
+			p No es permet enganxar o clavar objectes a les parets, terra i sostre dels espais.
+
+
+			hr.m-y-lg
+			
+
+
+
+			.text-center
+				a.btn.btn-primary.shadow-1(href="#") DESCARREGAR NORMATIVA
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Espais (Tarifes)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'espais-tarifes'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg
+			h1.display-3.text-center.m-b-lg ESPAIS
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") ESPAIS
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") NORMATIVA
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") TARIFES
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") SOL·LICITUD
+
+		.container
+			h2.text-center.m-b-lg.
+				TARIFES DELS ESPAIS DEL#[br]CENTRE CULTURAL LA FARINERA DEL CLOT
+
+
+			.table-responsive.m-b-lg
+				table.table
+					thead
+						th.p-r &nbsp;
+						th.p-r(colspan="2") 
+							.cell.black.text-center ENTITAT SENSE ÀNIM DE LUCRE
+						th(colspan="2")
+							.cell.black.text-center PARTICULAR O EMPRESA
+					tbody
+						tr
+							td.p-r 
+								.cell.black ESPAIS
+							td 
+								.cell.white.text-primary.text-center activitat gratuïta
+							td.p-r
+								.cell.white.text-primary.text-center activitat pagament
+							td 
+								.cell.white.text-primary.text-center activitat gratuïta
+							td 
+								.cell.white.text-primary.text-center activitat pagament
+						tr
+							td.p-r 
+								.cell.white TEATRE
+							td 
+								.cell.gray.text-center 25,00
+							td.p-r 
+								.cell.gray.text-center 33,00
+							td 
+								.cell.gray.text-center 45,00
+							td 
+								.cell.gray.text-center 60,00
+						tr
+							td.p-r 
+								.cell.white TALLER GRAN / SAP /AD
+							td 
+								.cell.gray.text-center 9,00
+							td.p-r 
+								.cell.gray.text-center 10,00
+							td 
+								.cell.gray.text-center 14,30
+							td 
+								.cell.gray.text-center 20,90
+						tr
+							td.p-r 
+								.cell.white TALLER PETIT
+							td 
+								.cell.gray.text-center 5,00
+							td.p-r 
+								.cell.gray.text-center 7,00
+							td 
+								.cell.gray.text-center 10,67
+							td 
+								.cell.gray.text-center 15,00
+
+
+
+
+			.page-header IMPORTANT
+			p.
+				Tots els preus són preu/hora sense IVA.#[br]
+				SAP = Sala d’Arts Plàstiques#[br]
+				AD = Aula de Dansa#[br]
+				El preu del material tècnic i de les hores extres de personal és 
+				reflectirà en el pressupost expedit pel Centre.
+
+
+			hr.m-y-lg
+
+
+			.text-center
+				a.btn.btn-primary.shadow-1(href="#") DESCARREGAR TARIFES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

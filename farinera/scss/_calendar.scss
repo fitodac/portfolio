@@ -1,0 +1,88 @@
+
+
+.bootstrap-datetimepicker-widget .datepicker{
+	padding: 0 0 20px;
+}//datepicker
+
+
+
+.bootstrap-datetimepicker-widget .datepicker .datepicker-days{
+	font-family: $nunito;
+	font-size: 1rem;
+
+
+	.picker-switch{
+		font-size: 1.3rem;
+		text-transform: uppercase;
+	}//picker-switch
+
+
+
+	.table-condensed{
+		width: 100% !important;
+
+		tbody{
+			border: solid 4px #fff;
+
+
+			tr{
+				background: #fff;
+
+
+				td.day{
+					color: $dark;
+					font-size: 16px;
+					width: 30px;
+					height: 38px;
+					border-radius: 0;
+					box-shadow: 0 0 0 1px #fff inset;
+					cursor: default;
+
+					&.disabled{
+						background: #fff;
+						color: $dark;
+					}
+
+					&.disabled.new,
+					&.disabled.old{
+						background: #ECF0F1;
+						color: lighten($dark,50%);
+					}
+
+					&.weekend{
+						background: #CBD1D1;
+						color: $dark;
+					}
+
+					&.active.disabled{
+						// background: #ECF0F1;
+						background: #fff;
+						color: $dark;
+					}
+
+					&.highlight{
+						background: $orange;
+						color: #fff;
+						cursor: pointer;
+
+						&:hover{
+							background: darken($orange, 10%);
+						}
+					}//highlight
+				}//td
+
+			}//tr
+
+		}//tbody
+
+	}//table-condensed
+
+}//datepicker
+
+
+
+
+
+
+
+

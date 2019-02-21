@@ -1,0 +1,11 @@
+
+
+@mixin linkHover($params...){
+	&:hover, &:active, &:focus{
+		@each $style in $params{
+			$rule: nth($style,1);
+			$val: nth($style,2);
+			#{$rule}: $val;
+		}
+	}
+}

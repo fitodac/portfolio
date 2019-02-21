@@ -1,0 +1,163 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Espais'
+	- var plugins = ['lightbox']
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'espais'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md-2
+			h1.display-3.text-center.m-b-lg ESPAIS
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") ESPAIS
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") NORMATIVA
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") TARIFES
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") SOL·LICITUD
+
+
+
+		section.bg-white.p-t-md.p-b-sm.m-b-lg-2
+			.container
+				.row
+					.col-sm-4
+						img.img-responsive.img-rotated(src="#{imgPath}02.jpg" style="margin:-35px 0;")
+
+					.col-sm-8
+						p.
+							El Centre Cultural la Farinera del Clot cedeix els espais 
+							a ciutadans, entitats, grups o institucions perquè puguin 
+							dur a terme activitats. El Centre també ofereix la 
+							possibilitat d’utilitzar equipament tècnic.
+						p.
+							La Farinera disposa de sales habilitades per fer representacions 
+							teatrals, concerts, reunions, conferències, activitats de cos i 
+							dansa i/o d’arts plàstiques.
+						p.
+							Consulteu les característiques de cada sala, les condicions 
+							de la cessió i ompliu el formulari online per sol·licitar 
+							l’espai que més s’ajusti a les vostres necessitats.
+
+
+
+
+
+		.container.bg-white.p-md.m-b-lg
+			.row.p-b
+				.col-md-10.col-sm-9
+					.h2.m-0.text-primary TEATRE JESÚS CONCERNAU
+
+				.col-md-2.col-sm-3
+					a.btn.btn-primary.btn-block(href="#") Rider tècnic
+
+
+			.bg-gray1.text-white.p-md.m-b.columns-2
+				p.
+					#[strong Superfície:] 100 m2 amb escenari de 5 x 8 m (tarima de 8 x 4 m).
+				p.
+					#[strong Aforament:] 180 persones assegudes i 280 persones dretes.
+				p.
+					#[strong Característiques:]#[br] 
+					Il·luminació natural i artificial, terra de fusta i grada retràctil. 
+					Té dos camerinos, amb dues dutxes cadascun i un lavabo.
+				p.
+					*L’ús de l’equip de so i llums requereix la contractació de personal 
+					tècnic de l’equipament.
+				p.
+					#[strong Escenari:]#[br]
+					Les mides de l’escenari són de 8,40 m d'amplada per 5,12 m de profunditat. 
+					L’alçada de la tarima és de 0,74 m. L’estructura consta de 3 barres dins 
+					l’escenari a una alçada de 3,60 m i 1 barra  frontal a 4,15 m, totes són 
+					motoritzades. El teló és americà amb obertura i tancament manual. La caixa 
+					negra té 3 bambolines i 4 cametes (2 a l’esquerra i 2 a la dreta). A la 
+					part posterior de l’escenari hi ha una pantalla de projecció de 3 x 4 m 
+					(amb motor de desplegament i recollida).
+
+
+
+			.row.lightbox-gallery
+				.col-sm-6
+					a.lightbox-item(href="#{imgPath}1072.jpg")
+						img.img-responsive(src="https://unsplash.it/800/440?image=1072")
+				
+				.col-sm-6
+					.row.p-b
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1068.jpg")
+								img.img-responsive(src="https://unsplash.it/400/220?image=1068")
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1067.jpg")
+								img.img-responsive(src="https://unsplash.it/400/221?image=1067")
+					.row
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1059.jpg")
+								img.img-responsive(src="https://unsplash.it/400/222?image=1059")
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1037.jpg")
+								img.img-responsive(src="https://unsplash.it/400/223?image=1037")
+
+
+
+
+
+		.container.bg-white.p-md.m-b-lg
+			.row.p-b
+				.col-sm-10
+					.h2.m-0.text-primary TALLER GRAN
+					span La Farinera disposa de 3 tallers grans.
+
+				.col-sm-2
+
+
+			.bg-gray1.text-white.p-md.m-b.columns-2
+				p.
+					#[strong Superfície:] menys de 100 m2.
+				p.
+					#[strong Característiques:]#[br]
+					il·luminació natural i artificial i terra de fusta. La sala disposa 
+					de pica i equip de so. El taller està dotat de taules i cadires que 
+					es poden treure.
+				p.
+					#[strong Aforament:]#[br]
+					25 persones amb taules i cadires, format classe.#[br]
+					35 persones només amb cadires, format conferència.#[br]
+					40 persones sense taules i cadires.
+
+
+
+			.row
+				.col-sm-6
+					a.lightbox-item(href="#{imgPath}1072.jpg")
+						img.img-responsive(src="https://unsplash.it/800/440?image=1072")
+				
+				.col-sm-6
+					.row.p-b
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1068.jpg")
+								img.img-responsive(src="https://unsplash.it/400/220?image=1068")
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1067.jpg")
+								img.img-responsive(src="https://unsplash.it/400/221?image=1067")
+					.row
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1059.jpg")
+								img.img-responsive(src="https://unsplash.it/400/222?image=1059")
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1037.jpg")
+								img.img-responsive(src="https://unsplash.it/400/223?image=1037")
+
+
+
+
+
+
+
+

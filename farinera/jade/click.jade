@@ -1,0 +1,100 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Click'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'click'
+
+
+
+mixin card(w,h)
+	.card.card-divided
+		.card-block
+			.row.flex.flex-center
+				.col-sm-4.col-ms-flex-6
+					img.img-responsive(src="https://unsplash.it/#{w}/#{h}")
+
+
+				.col-sm-8.col-ms-flex-6
+					.p-b
+						.h3.fw-800.m-0 Núm. 42
+						.h4.m-0 Gener / Febrer
+						.h4.m-0 2017
+
+					a.btn.btn-primary(href="#") DESCARREGAR PDF
+
+
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg
+			svg.main-click: use(xlink:href="#click")
+			h5.text-primary.text-center BUTLLETÍ INFORMATIU DEL CLOT-CAMP DE L’ARPA
+
+
+
+		section.bg-white.p-y-sm-5.m-b-md-3
+			.container.text-center.
+				El Clic va néixer amb la Farinera com a mitjà de comunicació des d’on 
+				difondre el que passa tant de portes endins com en el seu entorn més 
+				immediat, el barri del Clot-Camp de l’Arpa. És una eina comunicativa 
+				que ens serveix a professionals, entitats i ciutadania per informar i 
+				compartir els projectes culturals i socials del barri.
+
+
+
+		.container
+			.row.p-b-md-2
+				.col-md-6.col-md-push-0.col-sm-8.col-sm-push-2
+					+card(400,520)
+					+card(401,521)
+					+card(402,522)
+					+card(403,523)
+
+
+				.col-md-6.col-md-push-0.col-sm-8.col-sm-push-2
+					+card(404,524)
+					+card(405,525)
+					+card(406,526)
+					+card(407,527)
+
+
+
+
+			.text-center
+				ul.pagination
+					li
+						a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+							svg.icon: use(xlink:href="#arrow-left")
+
+					li: a(href="#") 1
+					li: a(href="#") 2
+					li: a(href="#") 3
+					li.active: a(href="#") 4
+					li: a(href="#") 5
+					li: a(href="#") 6
+					li: a(href="#") 7
+					li: a(href="#") 8
+					li: a(href="#") 9
+
+					li
+						a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+							svg.icon: use(xlink:href="#arrow-right")
+			
+
+
+
+
+
+
+
+
+

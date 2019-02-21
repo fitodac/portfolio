@@ -1,0 +1,121 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Agenda 2'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'agenda-2'
+
+
+
+include partials/_card-category.jade
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md
+			h1.display-3.text-center.m-b-lg AGENDA
+
+
+			.search.p-b-md-2
+				button.btn.btn-primary.btn-inverse.btn-icon.btn-rounded.btn-lg.shadow-0.m-r-sm
+					svg.icon: use(xlink:href="#ico-calendar-alt")
+				button.btn.btn-primary.btn-icon.btn-rounded.btn-lg.shadow-0.m-r 
+					svg.icon: use(xlink:href="#ico-list")
+
+
+				form
+					input.form-control(type="text" placeholder="Buscador")
+					button.btn.btn-primary
+						svg.icon.icon-inverse: use(xlink:href="#ico-search")
+
+
+
+
+			.row
+				.col-md-9.col-sm-8
+					.row.p-b-md-2
+						.col-md-6
+							+card()
+							+card()
+							+card()
+							+card()
+
+
+						.col-md-6
+							+card()
+							+card()
+							+card()
+							+card()
+
+
+					.text-center
+						ul.pagination
+							li
+								a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+									svg.icon: use(xlink:href="#arrow-left")
+
+							li: a(href="#") 1
+							li: a(href="#") 2
+							li: a(href="#") 3
+							li.active: a(href="#") 4
+							li: a(href="#") 5
+							li: a(href="#") 6
+							li: a(href="#") 7
+							li: a(href="#") 8
+							li: a(href="#") 9
+
+							li
+								a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+									svg.icon: use(xlink:href="#arrow-right")
+
+
+
+
+
+				.col-md-3.col-sm-4
+					.card
+						.card-block
+							.card-title CATEGORIES
+
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+
+
+					.card
+						.card-block
+							.card-title FILTRES
+
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") CATEGORIA
+							a.tag(href="#") NOM CATEGORIA
+
+
+
+
+
+
+

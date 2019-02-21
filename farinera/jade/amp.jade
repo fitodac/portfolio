@@ -1,0 +1,304 @@
+extend templates/_template-alt.default.jade
+
+block pageData
+	- var pageName = 'Antonio Miró Peris'
+	- var plugins = ['owl']
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'AMP'
+
+
+block content
+	main.wrapper
+
+		include partials/_hero-alt.jade
+
+		.container.p-b-md
+			.row
+				.col-md-5.col-sm-6
+					//- CARD 1
+					a.card(href="#" style="background-image:url('#{imgPath}01.jpg')")
+						
+						.card-block
+							span.label.label-o EXPOSICIÓ
+						
+						.card-block
+							.h2.p-y-md-3.text-center.text-white NARRIN#[br]NARRAN
+
+						.card-block
+							ul.info.text-white
+								li 
+									svg.icon.icon-inverse: use(xlink:href="#ico-calendar")
+									span 10/02/2017 al 14/03/2017
+								li 
+									svg.icon.icon-inverse: use(xlink:href="#ico-pin")
+									span La Farinera del Clot
+
+
+
+
+
+					//- CARD 2
+					.card.card-horz
+						.col-flex-6
+							a.card.height-percent-100(href="#" style="background-image:url('#{imgPath}04.jpg')")
+								.card-block
+									span.label.label-o CONVOCATÒRIA
+							
+						.col-flex-6
+							.card-block
+								.h3.p-t-md.p-b-lg 
+									a(href="#") El venadito
+
+							.card-block
+								ul.info
+									li 
+										svg.icon: use(xlink:href="#ico-calendar")
+										span 10/02/2017 al 14/03/2017
+									li 
+										svg.icon: use(xlink:href="#ico-pin")
+										span La Farinera del Clot
+
+
+
+
+
+
+
+				.col-md-7.col-sm-6
+					//- CARD 3
+					a.card.card-horz.bg-o(href="#")
+						.col-flex-5
+							.card.height-percent-100(style="background-image:url('#{imgPath}02.jpg')")
+								.card-block
+									span.label.label-o CONFERÈNCIES
+							
+						.col-flex-7.bg-o
+							.card-block
+								.h2.p-t-md 155,#[br]SIMON#[br]RODOWITZKY
+
+							.card-block
+								.row
+									.col-sm-6
+										ul.info.text-white
+											li 
+												svg.icon.icon-inverse: use(xlink:href="#ico-calendar")
+												span 10/01/2017
+											li 
+												svg.icon.icon-inverse: use(xlink:href="#ico-clock")
+												span 21:30h.
+
+									.col-sm-6
+										ul.info.text-white
+											li 
+												svg.icon.icon-inverse: use(xlink:href="#ico-euro")
+												span 10,00 &euro;
+											li 
+												svg.icon.icon-inverse: use(xlink:href="#ico-pin")
+												span La Farinera del Clot
+
+
+
+
+					.row
+						.col-md-6
+							//- CARD 4
+							.card
+								.card-header.p-y-sm
+									.card-title.m-y-sm-2.pull-left
+										svg.icon: use(xlink:href="#ico-news")
+										span NOTICIES RECENTS
+									svg.icon.icon-totes.pull-right: use(xlink:href="#ico-totes")
+
+								.list-group
+									a.list-group-item(href="#")
+										.media
+											.media-left
+												img.media-object(src="assets/images/04.jpg" style="width:80px; height:80px;")
+											.media-body.
+												20a Mostra d'audiovisuals i fotografia de muntanya
+
+
+									a.list-group-item(href="#")
+										.media
+											.media-left
+												img.media-object(src="assets/images/04.jpg" style="width:80px; height:80px;")
+											.media-body.
+												20a Mostra d'audiovisuals i fotografia de muntanya
+
+
+									a.list-group-item(href="#")
+										.media
+											.media-left
+												img.media-object(src="assets/images/04.jpg" style="width:80px; height:80px;")
+											.media-body.
+												20a Mostra d'audiovisuals i fotografia de muntanya
+
+
+									a.list-group-item(href="#")
+										.media
+											.media-left
+												img.media-object(src="assets/images/04.jpg" style="width:80px; height:80px;")
+											.media-body.
+												20a Mostra d'audiovisuals i fotografia de muntanya
+
+							div
+
+
+
+
+
+						.col-md-6
+							//- CARD 5
+							a.card.text-white(href="#" style="background-image:url('#{imgPath}03.jpg');")
+								span.label.label-o.label-ribbon(style="transform-origin: 15% 136%;") ESPAIS
+
+								.card-block.text-center.text-white
+									.h2.p-t-md-2.p-b CESSIÓ D'ESPAIS
+
+									.card-text
+										small Espais a ciutadans, entitats, groups I institucions per tal que puguin dur a terme les seves activitats
+
+
+							//- CARD 6
+							a.card(href="#")
+								.card-block.text-center
+									svg.icon.m-b-sm(style="width:90px; height:90px;"): use(xlink:href="#ico-users")
+									.h2 GESTIÓ CÍVICA
+
+
+
+
+
+		.container.p-b-md
+			.twitter-feed
+				header
+					.card
+						svg.icon: use(xlink:href="#ico-twitter")
+
+				.feed
+					.owl-carousel
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									Los soberanos a la nit yeye ibèrica northern_clot #[span.text-primary #musica] #[span.text-primary #centrescívics] #[span.text-primary #santmartí] #[span.text-primary #soldout] https://www.instagram.com/p/BP02WL1hbHt/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									los retrovisores provant. Inici 21h northern_clot #[span.text-primary #música] #[span.text-primary #yeye] https://www.instagram.com/p/BP0Xf8pB3Kl/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									A les 20h obrim taquilla per #[span.text-primary @LosRetrovisores] #[span.text-primary #LosSalvajes] #[span.text-primary #LosSoberanos] Música ibèrica amb @NorthernClot
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									Los soberanos a la nit yeye ibèrica northern_clot #[span.text-primary #musica] #[span.text-primary #centrescívics] #[span.text-primary #santmartí] #[span.text-primary #soldout] https://www.instagram.com/p/BP02WL1hbHt/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									los retrovisores provant. Inici 21h northern_clot #[span.text-primary #música] #[span.text-primary #yeye] https://www.instagram.com/p/BP0Xf8pB3Kl/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									A les 20h obrim taquilla per #[span.text-primary @LosRetrovisores] #[span.text-primary #LosSalvajes] #[span.text-primary #LosSoberanos] Música ibèrica amb @NorthernClot
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									Los soberanos a la nit yeye ibèrica northern_clot #[span.text-primary #musica] #[span.text-primary #centrescívics] #[span.text-primary #santmartí] #[span.text-primary #soldout] https://www.instagram.com/p/BP02WL1hbHt/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									los retrovisores provant. Inici 21h northern_clot #[span.text-primary #música] #[span.text-primary #yeye] https://www.instagram.com/p/BP0Xf8pB3Kl/
+
+
+						.card
+							.card-block
+								.card-title 
+									span CC Farinera del Clot
+									small @farinera 28 ene.
+								.card-text.
+									A les 20h obrim taquilla per #[span.text-primary @LosRetrovisores] #[span.text-primary #LosSalvajes] #[span.text-primary #LosSoberanos] Música ibèrica amb @NorthernClot
+
+							
+
+
+
+		.container
+			.row
+				.col-md-4.col-sm-6
+					.card.bg-o
+						.card-block.p-y-md-3.text-center
+							.h3.p-b-sm CURSOS I TALLERS
+							a.btn.btn-sm.btn-primary.btn-inverse(href="#") INSCRIPCIONS ON-LINE
+					
+					div
+
+
+				.col-md-4.col-sm-6
+					.card.bg-o
+						.card-block.p-y-md-3.text-center
+							.h3.p-b-sm CONVOCATÒRIES
+							a.btn.btn-sm.btn-primary.btn-inverse(href="#") INSCRIPCIONS ON-LINE
+					
+					div
+
+
+				.col-md-4.col-sm-6
+					a.card(href="#")
+						.card-block.text-center(style="padding:50px 15px;")
+							.m-b
+								svg.icon.icon-click: use(xlink:href="#click")
+							.card-text
+								strong.text-primary. 
+									BUTLLETÍ INFORMATIU#[br]DEL CLOT-CAMP DE L’ARPA
+					
+					div
+
+
+
+
+
+
+
+
+
+

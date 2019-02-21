@@ -1,0 +1,180 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Noticies (article)'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'noticies-article'
+
+
+
+mixin sidecard()
+	.card.card-transparent
+		.card-block
+			.h5: a(href="#") 20a Mostra d'audiovisuals i fotografia de muntanya
+
+			.filters
+				a(href="#"): small NOM CATEGORIA
+				a(href="#"): small CATEGORIA
+				a(href="#"): small NOM FILTRE
+				a(href="#"): small FILTRE
+
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head-no-margin.jade
+
+
+		.breadcrumbs
+			ul
+				li NOTÍCIES
+
+
+		section.article-head
+			.container
+				.row.text-center
+					.col-sm-10.col-sm-push-1
+						h1 20ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+
+						.categories
+							a.btn.btn-primary.btn-sm NOM CATEGORIA
+							a.btn.btn-primary.btn-sm NOM CATEGORIA
+
+						.datetime
+							ul
+								li
+									svg.icon: use(xlink:href="#ico-calendar")
+									span 04/03/2017
+								li
+									svg.icon: use(xlink:href="#ico-clock")
+									span 18:30h.
+
+							ul
+								li
+									svg.icon: use(xlink:href="#ico-calendar")
+									span 04/03/2017
+								li
+									svg.icon: use(xlink:href="#ico-clock")
+									span 18:30h.
+
+
+						.filters
+							a(href="#") Nom filtre
+							a(href="#") Nom filtre
+							a(href="#") Nom filtre
+
+
+			.nav
+				a.btn(href="#")
+					svg.icon: use(xlink:href="#arrow-left")
+
+				a.btn(href="#")
+					svg.icon: use(xlink:href="#arrow-right")
+
+
+
+
+		.container
+			.row
+				.col-sm-9
+					article.entry-content
+						h2.
+							A càrrec de l'Agrupació Excursionista Icària, la Colla Excursionista
+							La Senyera, la Secció Excursionista del Foment Martinenc.
+
+						img.img-responsive.m-b-lg(src="https://unsplash.it/900/330/")
+
+						.p-b
+							p.
+								Ja tenim aquí la 20a Mostra d'Audiovisuals i Fotografia de Muntanya. 
+								Un any més, podrem gaudir de la mostra fotogràfica i dels diferents 
+								passis d'audiovisuals que aniran acompanyats de les ponències de les 
+								mateixes persones participants i autores. Tot plegat, amb l'objectiu 
+								de divulgar, donar a conèixer i dinamitzar el món excursionista, el 
+								seu entorn i el respecte a la muntanya per part de tothom.
+
+							p.
+								Inauguració dissabte 4 de març, 18.30 h#[br]
+								Passi audiovisuals del 4 al 18 de març de dilluns a divendres, 19h#[br]
+								Cloenda dissabte 18 de març, 18.30 h
+
+
+						a.btn.btn-file.m-b-sm-2(href="#")
+							svg.icon.icon-primary: use(xlink:href="#ico-file") 
+							span Nom document.pdf
+						a.btn.btn-file.m-b-sm-2(href="#") 
+							svg.icon.icon-primary: use(xlink:href="#ico-w") 
+							span www.mostrademuntanya.cat
+
+
+						footer
+							.row
+								.col-md-6
+									ul.info
+										li 
+											svg.icon.icon-inverse: use(xlink:href="#ico-calendar")
+											span 10/01/2017
+										li 
+											svg.icon.icon-inverse: use(xlink:href="#ico-clock")
+												span 21:30h.
+
+								.col-md-6
+									ul.info
+										li 
+											svg.icon.icon-inverse: use(xlink:href="#ico-pin")
+											span La Farinera del Clot
+										li 
+											svg.icon.icon-inverse: use(xlink:href="#ico-euro")
+											span 10,00 &euro;
+											a.btn.btn-primary.btn-xs.m-l(href="#") COMPRAR ENTRADES
+
+
+
+						.social
+							a(href="#")
+								span.sr-only facebook
+								svg: use(xlink:href="#ico-facebook")
+
+							a(href="#")
+								span.sr-only twitter
+								svg: use(xlink:href="#ico-twitter")
+
+
+
+
+
+
+
+				.col-sm-3
+					.height-5.visible-ms.visible-xs
+
+					.h4.text-primary RELACIONATS
+
+					+sidecard()
+					+sidecard()
+					+sidecard()
+					+sidecard()
+					+sidecard()
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

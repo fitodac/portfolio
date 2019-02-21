@@ -1,0 +1,57 @@
+table.table{
+
+	thead > tr > th{
+		border-bottom: none;
+		font-size: .9rem;
+		font-weight: 500;
+		padding: 3px;
+	}
+
+	tbody > tr > td{
+		border-bottom: none;
+		font-size: .9rem;
+		padding: 3px;
+	}
+
+
+
+	.cell{
+		padding: 5px;
+
+		&.black{
+			background: #262626;
+			color: #fff;
+		}//black
+
+		&.white{
+			background: #fff;
+			color: #262626;
+		}//white
+
+		&.gray{
+			background: #ddd;
+			color: #262626;
+		}//gray
+
+
+		&.text-primary{
+			color: $orange;
+		}
+
+	}//cell
+
+}//table
+
+
+
+
+
+
+
+
+
+
+
+
+
+

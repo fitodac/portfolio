@@ -1,0 +1,34 @@
+/*-----------------------------------------------*/
+/*	RESPONSIVE
+/*	Bootstrap media queries
+/*-----------------------------------------------*/
+@media screen and (max-width: 1050px) {
+
+
+	.navbar{
+
+		.topbar .social{
+			padding-left: 150px;
+		}
+
+
+		.navbar-header{
+			width: 160px;
+			margin-left: -15px;
+
+			.navbar-brand{
+				width: 140px;
+			}//navbar-brand
+
+		}//navbar-header
+
+	}//navbar
+
+
+
+
+
+}//max-width: 1050px
+
+
+

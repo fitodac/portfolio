@@ -1,0 +1,203 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Projectes SIL'
+	- var plugins = []
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'projectes-sil'
+
+
+
+
+
+
+mixin cardNews()
+	.card.card-horz
+		.col-flex-5
+			.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+				.card-block
+					span.label.label-o EXPOSICIÓ
+			
+		.col-flex-7
+			.card-block
+				.h4: a(href="#") 20a Mostra d'audiovisuals i fotografia de muntanya
+
+			.card-block
+				.row
+					.col-md-6
+						ul.info
+							li 
+								svg.icon: use(xlink:href="#ico-calendar")
+								span 10/01/2017
+					
+					.col-md-6
+						ul.info
+							li 
+								svg.icon: use(xlink:href="#ico-clock")
+								span 21:30h.
+					
+				ul.info
+					li 
+						svg.icon: use(xlink:href="#ico-pin")
+						span C. Cultural La Farinera del Clot
+
+
+
+
+
+
+mixin cardSched()
+	.card.card-horz
+		.col-flex-5
+			.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+				.card-block
+					span.label.label-o EXPOSICIÓ
+			
+		.col-flex-7
+			.card-block
+				.h4: a(href="#") 20a Mostra d'audiovisuals i fotografia de muntanya
+
+			.card-block
+				.row
+					.col-sm-6
+						ul.info
+							li 
+								svg.icon: use(xlink:href="#ico-euro")
+								span 10,00 &euro;
+					.col-sm-6
+						ul.info
+
+				.row
+					.col-md-6
+						ul.info
+							li 
+								svg.icon: use(xlink:href="#ico-calendar")
+								span 10/01/2017
+					
+					.col-md-6
+						ul.info
+							li 
+								svg.icon: use(xlink:href="#ico-clock")
+								span 21:30h.
+					
+				ul.info
+					li 
+						svg.icon: use(xlink:href="#ico-pin")
+						span C. Cultural La Farinera del Clot
+
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head-no-margin.jade
+
+
+		.breadcrumbs
+			ul
+				li PROJECTES > CICLES > SAY IT LOUD
+
+
+
+		section.hero
+			.owl-item
+				div(style="background-image:url(https://unsplash.it/1400/800);")
+					.container
+						h1.m-b-md Say it loud
+
+						.m-b-md
+							a.btn.btn-primary(href="#") VISITA LA WEB
+
+						.height-2.visible-sm.visible-xs
+
+						.social
+							a(href="#")
+								span.sr-only facebook
+								svg: use(xlink:href="#ico-facebook")
+
+							a(href="#")
+								span.sr-only twitter
+								svg: use(xlink:href="#ico-twitter")
+
+							a(href="#")
+								span.sr-only instagram
+								svg: use(xlink:href="#ico-instagram")
+
+							a(href="#")
+								span.sr-only youtube
+								svg: use(xlink:href="#ico-youtube")
+
+
+
+
+
+		.container.p-b-md-3
+			.columns-2.p-b-lg
+				p.
+					Say it Loud neix a la Farinera del Clot com a cicle 
+					musical al 2008. Amb la voluntat d'obrir espai en 
+					l'atapeida escena cultural barcelonina per a la música 
+					negra, un cicle amb diverses dates que acull gran part 
+					de les bandes locals de diferents estils: Hip hop, Jazz, 
+					Funk, Reggae, Soul…. Concerts, exposicions, xerrades, 
+					discoforums, projeccions, sessions… Say it Loud va 
+					augmentant el contingut del cicle també fora de l'escenari, 
+					recollint manifestacions culturals en diferents formats.
+
+				p.
+					Amb el temps i després de múltiples col·laboracions, els 
+					projectes es van diversificant i apareix Say it Loud 
+					Records, amb l'edició en vinil el 2014 del primer treball 
+					d'Extraño Weys, una vesant del projecte que promet continuar 
+					creixent.
+
+				p.
+					D'altra banda, l'oferta artística del cicle s'ha anat 
+					diversificant i internacionalitzant però sempre mantenint 
+					una aposta per la varietat i la qualitat dins de la música 
+					negra. Projectes de col·laboració, concerts, nous treballs 
+					en vinil… les portes estan obertes a qualsevol proposta, 
+					partint de l'amor per la música negra i d'entendre la cultura 
+					com una eina alliberadora.
+
+
+
+			.text-center
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") NOM DOCUMENT
+				.height-2.visible-xs
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") NOM DOCUMENT
+
+
+
+
+
+		.container.m-b-lg-2
+			.row
+				.col-sm-6
+					.h2.fw-800.text-center.m-b-md NOTÍCIES
+					+cardNews()
+					+cardNews()
+					+cardNews()
+					
+
+				.col-sm-6
+					.h2.fw-800.text-center.m-b-md AGENDA
+					+cardSched()
+					+cardSched()
+					+cardSched()
+					
+
+
+
+
+
+
+
+
+
+
+
+

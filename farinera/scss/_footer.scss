@@ -1,0 +1,99 @@
+
+.main-footer{
+	background: $dark;
+	color: #fff;
+	font-size: .9rem;
+	padding: 20px 0 40px;
+
+
+
+	.brand{
+		width: 100px;
+		height: 100px;
+		margin-bottom: 30px;
+
+		use{ fill: #fff; }
+
+	}//brand
+
+
+	.brand-amp{
+		margin-bottom: 60px;
+	}//brand-amp
+
+
+
+
+
+	.h3{
+		color: $orange;
+		font-size: 1rem;
+		font-weight: 600;
+	}//h3
+
+
+
+	.social{
+		margin-left: -10px;
+	}//social
+
+
+
+	.btn-sharp{
+		color: $orange;
+		border-color: #999;
+
+		@include linkHover(color $orange);
+	}//btn-sharp
+
+
+	
+
+
+
+	.suscribe{
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		.form-control{
+			background-color: $dark;
+			color: #fff;
+			box-shadow: 0;
+		}//form-control
+
+	}//suscribe
+
+
+
+
+
+
+
+
+
+	.palms-logo{
+		text-align: center;
+		float: right;
+
+		img{
+			margin-bottom: 20px;
+			display: inline-block;
+		}//img
+
+		small{
+			display: block;
+		}//small
+
+	}//palms-logo
+
+
+}//main-footer
+
+
+
+
+
+
+
+
+

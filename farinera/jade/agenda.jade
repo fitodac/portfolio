@@ -1,0 +1,201 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Agenda'
+	- var plugins = ['bs-datetimepicker']
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'agenda'
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-md
+			h1.display-3.text-center.m-b-lg AGENDA
+
+
+			.search.p-b-md-2
+				button.btn.btn-primary.btn-icon.btn-rounded.btn-lg.shadow-0.m-r-sm
+					svg.icon: use(xlink:href="#ico-calendar-alt")
+				button.btn.btn-primary.btn-inverse.btn-icon.btn-rounded.btn-lg.shadow-0.m-r 
+					svg.icon: use(xlink:href="#ico-list")
+
+
+				form
+					input.form-control(type="text" placeholder="Buscador")
+					button.btn.btn-primary
+						svg.icon.icon-inverse: use(xlink:href="#ico-search")
+
+
+
+			.row.p-b-lg
+				.col-md-4.col-sm-6.col-ms-8.col-ms-offset-2
+					div.calendar(data-cal-start="01/01/2017" data-cal-end="01/31/2017" data-cal-dates="01/01/2017,01/12/2017,01/23/2017")
+
+					#01-01-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 20ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+					#01-12-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 21ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+					#01-23-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+
+
+
+
+
+				.col-md-4.col-sm-6.col-ms-8.col-ms-offset-2
+					div.calendar(data-cal-start="02/01/2017" data-cal-end="02/28/2017" data-cal-dates="02/02/2017,02/09/2017")
+
+					#02-02-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 20ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+
+					#02-09-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+
+
+
+
+
+				.col-md-4.col-sm-6.col-ms-8.col-ms-offset-2
+					div.calendar(data-cal-start="03/01/2017" data-cal-end="03/31/2017" data-cal-dates="03/05/2017,03/11/2017,03/30/2017")
+
+					#03-05-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 20ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+					#03-11-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 21ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+					#03-30-2017.event-info.collapse
+						.list-group
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+							.list-group-item.agenda
+								.h5 22ª MOSTRA D'AUDIOVISUALS I FOTOGRAFIA DE MUNTANYA
+								.categories.
+									#[a(href="#") Nom categoria] / #[a(href="#") Categoria]
+								.info
+									span 18:30h. 
+									span 10,00&euro;
+								a.btn.btn-primary.btn-xs(href="#") COMPRAR ENTRADES
+
+
+
+
+
+
+
+
+
+
+
+
+			.text-center
+				ul.pagination
+					li
+						a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+							svg.icon: use(xlink:href="#arrow-left")
+
+					li: a(href="#") 2016
+					li.active: a(href="#") 2017
+					li: a(href="#") 2018
+
+					li
+						a.btn.btn-primary.btn-inverse.btn-icon.btn-rounded(href="#")
+							svg.icon: use(xlink:href="#arrow-right")
+

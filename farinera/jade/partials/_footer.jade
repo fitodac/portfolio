@@ -1,0 +1,103 @@
+
+//- FOOTER
+footer.main-footer
+
+	.container
+		.row
+
+			.col-lg-6
+				if(linkCanonical = 'AMP')
+					img.brand-amp(src="#{imgPath}amp-2.png")
+				else
+					svg.brand: use(xlink:href="#svg-brand-alt")
+				
+				
+
+				.row
+					.col-sm-6
+
+						.h3 ON SOM
+						if(linkCanonical = 'AMP')
+							address
+								p.
+									Casal de Barri Espai Antoni Miró Peris #[br]
+									Pl. de Carme Montoriol, 10 #[br]
+									08026 Barcelona
+								p: a(href="tel:934 507 013") T. 934 507 013
+								p: a(href="mailto:eamp@farinera.org") eamp@farinera.org
+
+
+							.social
+								a(href="#")
+									span.sr-only facebook
+									svg: use(xlink:href="#ico-facebook")
+
+								a(href="#")
+									span.sr-only twitter
+									svg: use(xlink:href="#ico-twitter")
+
+
+
+						else
+							address
+								p.
+									Centre Cultural la Farinera del Clot #[br]
+									Gran Via de les Corts Catalanes, 837 #[br]
+									08018 Barcelona
+								p: a(href="tel:932 918 080") T. 932 918 080
+								p: a(href="mailto:informacio@farinera.org") informacio@farinera.org
+
+							include _social.jade
+
+
+
+
+
+					.col-sm-6
+						.h3 HORARI D’ATENCIÓ AL PÚBLIC
+
+						if(linkCanonical = 'AMP')
+							p.p-b-lg.
+								De dilluns a divendres de 16.30 a 21 h #[br]
+								Dimecres de 10.30 a 13.30 h
+
+						else
+							p.
+								Dilluns de 9 a 22 h #[br]
+								Dimarts i dijous de 9.30 a 22.30 h #[br]
+								Dimecres i divendres de 9 a 22.30 h #[br]
+								Dissabtes de 9 a 14 h i de 16 a 20 h
+
+						a.btn.btn-sharp.btn-lg(href="#") LOCALITZACIÓ
+
+
+
+			.col-lg-6
+				.row
+					.col-lg-12.col-sm-6
+						.suscribe.form-group.pull-right
+							.input-group
+								.input-group-btn
+									button.btn.btn-default(type="button")
+										svg.icon-envelope: use(xlink:href="#ico-envelope")
+								input.form-control.input-lg(type="email" placeholder="Subscriu-te al newsletter de la Farinera")
+
+
+
+					.col-lg-12.col-sm-6
+						.clearfix
+							.palms-logo
+								img(src="#{imgPath}clot-camp.png")
+								small.
+									El Centre Cultural la Farinera del Clot està gestionat per la Federació#[br]
+									d’Entitats del Clot-Camp de l’Arpa a través d’un model de gestió cívica.
+
+
+
+
+
+
+
+
+
+

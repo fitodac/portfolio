@@ -1,0 +1,159 @@
+extend templates/_template.default.jade
+
+block pageData
+	- var pageName = 'Projectes (category 2)'
+	- var plugins = ['lightbox']
+	- var fonticons = []
+	//- URL for current page. Helps to prevent duplicate content issues.
+	- var linkCanonical = 'projectes-category-2'
+
+
+
+include partials/_card-category.jade
+
+
+
+
+block content
+	main.wrapper
+
+		include partials/_page-head.jade
+
+		.container.p-b-lg-2
+			h1.display-3.text-center.m-b-lg PROJECTES
+
+
+
+			.text-center.nav-sections
+				a.btn.btn-primary.btn-cons.shadow-1.m-r(href="#") CICLES
+				a.btn.btn-primary.btn-inverse.btn-cons.shadow-1.m-r(href="#") CONVOCATÒRIES
+
+
+
+		section.bg-white.p-y-lg.m-b-md
+			.container
+				.text-center.
+					El suport a la creació és una de les línies de treball més 
+					importants de la Farinera. Tant les arts escèniques com les 
+					arts visuals es treballen a través de convocatòries, obrint 
+					les portes del Centre a artistes amateurs i professionals.
+
+
+
+		.container.m-b-lg-2
+			.page-header
+				.h2 Sala d’exposicions Joan Alsina
+
+
+			.card.card-horz.m-b-md-2(style="min-height:280px;")
+				.col-flex-5
+					.card.height-percent-100(style="background-image:url('assets/images/01.jpg')")
+
+
+				.col-flex-7
+					.card-block
+						.row.flex.flex-sm-column
+							.col-lg-8.col-md-7.fz-90
+								p.card-text.
+									Convocatòria anual de projectes expositius orientats 
+									a artistes tant novells com consolidats de l’escena 
+									catalana.
+
+								p.card-text.
+									A partir de la selecció de les propostes rebudes es 
+									configura la programació de la Sala Joan Alsina amb 
+									exposicions que es poden veure a la sala durant tres 
+									setmanes, amb inauguracions i activitats paral·leles.
+
+							.col-lg-4.col-md-5
+								.height-5.visible-ms.visible-xs
+								a.btn.btn-primary.btn-block.m-b(href="#") CONVOCATÒRIA
+								a.btn.btn-primary.btn-block.m-b(href="#") FITXA CONVOCATÒRIA
+
+
+
+
+			.card.m-b-md-2
+				.card-block
+					.row
+						.col-sm-9
+							.h2.text-primary: span.fz-65 SALA JOAN ALSINA
+						.col-sm-3
+							a.btn.btn-primary.btn-block(href="#") RIDERS
+
+				.card-block
+					.p.bg-gray1.text-white
+						.columns-2
+							p.card-text.
+								#[strong Superfície:] menys de 200 m2.
+
+							p.card-text.
+								#[strong Característiques:]#[br]
+								Il·luminació natural i artificial amb rails ERCO amb 36 focus 
+								mòbils i regulables d’intensitat. El terra és de fusta. La 
+								sala disposa de 9 plafons expositius mòbils per ubicar-los de 
+								la manera que l’artista desitgi, tenen raïls per penjar-hi 
+								quadres. Poden utilitzar-se per ambdues cares. A la sala hi 
+								ha peanyes expositives per escultures. Hi ha instal·lat un 
+								projector al sostre amb reproductor de CD, DVD o llapis USB.
+
+							p.card-text.
+								#[strong Aforament:] 150 persones
+
+
+				.card-block
+					.row.lightbox-gallery
+						.col-sm-6
+							a.lightbox-item(href="#{imgPath}1072.jpg")
+								img.img-responsive(src="https://unsplash.it/800/440?image=1072")
+						
+						.col-sm-6
+							.row.p-b
+								.col-sm-6
+									a.lightbox-item(href="#{imgPath}1068.jpg")
+										img.img-responsive(src="https://unsplash.it/400/220?image=1068")
+								.col-sm-6
+									a.lightbox-item(href="#{imgPath}1067.jpg")
+										img.img-responsive(src="https://unsplash.it/400/221?image=1067")
+							.row
+								.col-sm-6
+									a.lightbox-item(href="#{imgPath}1059.jpg")
+										img.img-responsive(src="https://unsplash.it/400/222?image=1059")
+								.col-sm-6
+									a.lightbox-item(href="#{imgPath}1037.jpg")
+										img.img-responsive(src="https://unsplash.it/400/223?image=1037")
+
+
+
+
+
+
+
+
+			.h3.m-b-md Notícies relacionades
+
+			.row
+				.col-sm-6
+					+card()
+					+card()
+					+card()
+
+
+				.col-sm-6
+					+card()
+					+card()
+					+card()
+					
+
+
+
+
+
+
+
+
+
+
+
+
+

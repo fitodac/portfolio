@@ -1,0 +1,17 @@
+.breadcrumbs{
+	background: #DEDEDE;
+	text-align: center;
+
+	ul{
+		padding: 4px 0;
+		margin: 0;
+
+		li{
+			font-family: $nunito;
+			font-size: .95rem;
+			font-weight: 700;
+			list-style: none;
+		}//li
+	}//ul
+
+}//breadcrumbs

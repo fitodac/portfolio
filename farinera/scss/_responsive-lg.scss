@@ -1,0 +1,118 @@
+/*-----------------------------------------------*/
+/*	RESPONSIVE
+/*	Bootstrap media queries
+/*-----------------------------------------------*/
+
+// LG
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}//max-width: 1824px
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+}//@media screen and (max-width: 1440px)
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}//max-width: 1224px
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	html{
+		font-size: 14.5px;
+	}//html
+
+
+	.navbar{
+		padding: 0;
+
+		.container{
+			width: 100%;
+		}//container
+
+		.nav-link{
+			padding-left: 10px;
+			padding-right: 10px;
+		}//nav-link
+	}//navbar
+
+
+	.circular{
+		font-size: .6rem;
+		font-weight: 600;
+		padding: 32px 15px;
+		margin-left: 310px;
+
+		span{
+			text-indent: 5px;
+		}
+		
+		img{
+			width: 100px;
+		}//img
+	}//circular
+
+
+
+
+	.info li{
+		font-size: .7rem;
+	}//info li
+
+
+
+	.curso--thumbnail{
+		height: 280px;
+
+
+		span{
+			font-size: 2.2rem;
+		}//curso--thumbnail span
+	}//curso--thumbnail
+
+
+
+
+
+	.main-footer{
+
+		> .container > [class^="col-"] + [class^="col-"]{
+			padding-top: 40px;
+		}
+
+
+		.palms-logo{
+
+			small{
+				font-size: .65rem;
+			}
+		}//palms-logo
+
+	}//main-footer
+
+
+}//@media screen and (max-width: 1200px)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.hero{
+	// background: url('../images/hero.jpg') no-repeat center / cover;
+	color: #fff;
+	text-align: center;
+	padding: 0;
+	margin-bottom: $main-spacer;
+
+
+
+	h1{
+		font-size: 7.8rem;
+		font-weight: 800;
+	}//h1
+
+
+	h2{
+		font-size: 4rem;
+		font-weight: 800;
+	}//h2
+
+
+	.owl-item > div{
+		background-size: cover;
+		padding: 100px 0;
+		position: relative;
+
+
+		> .container{
+			position: relative;
+			z-index: 10;
+		}//container
+
+
+		&::after{
+			content: '';
+			background: rgba(#000,.6);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			z-index: 1;
+		}//::after
+
+	}//owl-item
+
+}//hero
