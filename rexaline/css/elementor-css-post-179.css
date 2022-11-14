@@ -1,0 +1,18 @@
+.elementor-179 .elementor-element.elementor-element-6af50d2 > .elementor-element-populated{padding:20px 20px 15px 20px;}#elementor-popup-modal-179 .dialog-message{width:640px;height:auto;}#elementor-popup-modal-179{justify-content:center;align-items:center;pointer-events:all;background-color:rgba(0,0,0,.8);}#elementor-popup-modal-179 .dialog-close-button{display:block;}#elementor-popup-modal-179 .dialog-widget-content{box-shadow:2px 8px 23px 3px rgba(0,0,0,0.2);}/* Start custom CSS for wp-widget-media_video, class: .elementor-element-61b5182 */.elementor-179 .elementor-element.elementor-element-61b5182 .wp-video-shortcode{
+    width: 60vh !important;
+    height: 54.7vh !important;
+    margin: 0 auto;
+}
+
+.elementor-179 .elementor-element.elementor-element-61b5182 .mejs-layers,
+.elementor-179 .elementor-element.elementor-element-61b5182 .mejs-controls{
+    display: none;
+}/* End custom CSS */
+/* Start custom CSS */#elementor-popup-modal-179 .dialog-widget-content{
+    width: 60vh;
+}
+
+#elementor-popup-modal-179 .dialog-message{
+    width: 100%;
+}/* End custom CSS */
+/*This file was exported by "Export WP Page to Static HTML" plugin which created by ReCorp (https://myrecorp.com) */
