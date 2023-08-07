@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^/
+RewriteCond %{REQUEST_URI} !^/ryc
+RewriteRule ^(.*)$ /ryc/
