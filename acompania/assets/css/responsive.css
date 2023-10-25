@@ -1,0 +1,143 @@
+/*----------------------------------------------------------*/
+/*	RESPONSIVE
+/*	Bootstrap media queries
+/*----------------------------------------------------------*/
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+
+@media screen and (max-width: 1200px) {
+  .main-slider {
+    top: -110px; }
+    .main-slider .slick-track .slick-slide > div {
+      width: 800px; } }
+
+@media screen and (max-width: 1050px) {
+  .main-slider {
+    top: -120px; }
+  .home .container .colgroup {
+    display: block; }
+    .home .container .colgroup > [class^="col"] {
+      border: none;
+      border-bottom: solid 1px #ccc;
+      width: 100% !important;
+      height: auto;
+      display: block;
+      float: none !important; }
+      .home .container .colgroup > [class^="col"]:last-child {
+        border: none; }
+      .home .container .colgroup > [class^="col"] a {
+        display: block; }
+      .home .container .colgroup > [class^="col"] a::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .home .container .colgroup > [class^="col"] figure {
+        width: 25%;
+        float: left; }
+      .home .container .colgroup > [class^="col"] .panel-body {
+        width: 75%;
+        float: left; }
+        .home .container .colgroup > [class^="col"] .panel-body h3 {
+          font-size: 19px;
+          height: auto; } }
+
+@media screen and (max-width: 991px) {
+  header.navbar::before {
+    height: 300px; }
+  .navbar .navbar-header {
+    margin-top: 10px; }
+  .main-slider {
+    height: 570px;
+    top: -135px; }
+  .home .container .colgroup > [class^="col"] figure {
+    width: 30%; }
+  .home .container .colgroup > [class^="col"] .panel-body {
+    width: 70%; }
+  .main-footer > .container > .row > .col-sm-12 > .social {
+    text-align: center;
+    padding-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  header.navbar .video {
+    height: 110px; }
+  header.navbar::before {
+    height: 110px !important;
+    z-index: 5; }
+  .navbar-collapse {
+    top: 100px; }
+  .navbar .navbar-header .navbar-brand {
+    width: 160px; }
+  .main-slider {
+    top: -100px; }
+    .main-slider .slick-track .slick-slide > div {
+      width: 100% !important; }
+    .main-slider .slick-list > .slick-track > .slick-slide {
+      background-position: right top !important; }
+    .main-slider .slick-slide p {
+      font-size: 19px !important; }
+  .toolbar .social {
+    padding-top: 5px; }
+    .toolbar .social > small {
+      top: 0; }
+  .home .container .colgroup > [class^="col"] figure {
+    width: 40%; }
+  .home .container .colgroup > [class^="col"] .panel-body {
+    width: 60%; }
+  .home .main-footer {
+    margin-top: -60px; }
+  .footer-top {
+    padding: 10px 0; }
+    .footer-top .nav.navbar-nav {
+      margin: 0; }
+      .footer-top .nav.navbar-nav a {
+        font-size: 13px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important; }
+      .footer-top .nav.navbar-nav li:nth-child(even) {
+        text-align: left; }
+      .footer-top .nav.navbar-nav li:nth-child(odd) {
+        text-align: right; } }
+
+@media screen and (max-width: 440px) {
+  .main-slider {
+    top: -110px; }
+  .toolbar .social {
+    text-align: left;
+    float: left !important; }
+    .toolbar .social > small {
+      display: none; }
+    .toolbar .social a {
+      font-size: 16px;
+      line-height: 1;
+      padding: 7px 12px; }
+  .toolbar .tel {
+    padding: 8px 0 0 !important;
+    float: right; }
+  .main-slider .slick-slide > div > div {
+    text-align: center; }
+  .main-slider .slick-slide > div::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .main-slider .slick-list > .slick-track > .slider02.slick-slide {
+    background-position: 0 0 !important; }
+  .home .container .colgroup > [class^="col"] .overlay {
+    width: 45%;
+    height: 100% !important; }
+  .home .container .colgroup > [class^="col"] figure {
+    width: 45%; }
+  .home .container .colgroup > [class^="col"] .panel-body {
+    width: 55%; }
+    .home .container .colgroup > [class^="col"] .panel-body h3 {
+      font-size: 17px; }
+    .home .container .colgroup > [class^="col"] .panel-body p {
+      display: none; }
+  .testimonial-slider-container .slick-slide em {
+    font-size: 13px; } }

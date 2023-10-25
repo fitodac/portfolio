@@ -1,0 +1,147 @@
+/*
+# This document is for additional styles after finish the markup or minor fixes if you don't know how to work with LESScss.
+
+# Este documento podrá ser utilizado para agregar estilos adicionales o cambios menosre después de terminada la maquetación, si no tienes experiencia con LESScss.
+*/
+
+.parsley-errors-list.filled{
+	color: #C00;
+	font-size: 11px;
+	padding: 10px 0 0;
+}
+.parsley-errors-list.filled li{
+	list-style: none;
+}
+
+.form-control.parsley-error{
+	border-color: #C00;
+}
+
+aside .parsley-errors-list.filled{
+	padding: 10px 10px 0;
+}
+
+.form-control.parsley-error::-webkit-input-placeholder,
+.form-control.parsley-error:-moz-placeholder,
+.form-control.parsley-error::-moz-placeholder,
+.form-control.parsley-error::placeholder{
+	color: #CC0000;
+}
+
+
+.modal-backdrop.in{
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+
+
+
+
+.toolbar{
+	padding-top: 3px;
+}
+
+
+.toolbar .tel{
+	padding-top: 3px;
+	display: block;
+}
+
+
+
+/*------------------------------------------------*/
+/*	SOCIAL
+/*------------------------------------------------*/
+.social{
+	color: #fff;
+	text-align: right;
+}
+
+.social > small{
+	font-weight: 300;
+	font-size: 1.3rem;
+	padding-right: 5px;
+	display: inline-block;
+	top: -2px;
+	position: relative;
+}
+
+
+.social > a{
+	padding: 4px 10px;
+	display: inline-block;
+	transition: .3s;
+}
+
+.social > a:hover,
+.social > a:active,
+.social > a:focus{
+	background: rgba(255,255,255,.3);
+}
+
+
+.toolbar .social{
+	float: right;
+}
+
+.toolbar .tel{
+	padding-left: 30px;
+	float: right;
+}
+
+
+
+
+/*------------------------------------------------*/
+/*	MAIN FOOTER
+/*------------------------------------------------*/
+.main-footer{
+	padding-bottom: 80px;
+}
+
+
+.main-footer .social a{
+	font-size: 17px;
+}
+
+
+
+
+/* Cambia los cards de servicios por flex para igualar el alto de los mismos */
+.home .colgroup{
+	display: flex;
+}
+
+.home .colgroup > [class^="col-"]{
+	flex: 1;
+}
+
+.home .colgroup > [class^="col-"] img{
+	position: relative;
+	z-index: 10;
+}
+
+.home .colgroup > [class^="col-"] .panel-body{
+	background: #fff;
+	position: relative;
+	z-index: 50;
+}
+
+
+
+
+
+.main-slider{
+	width: 100%;
+}//main-slider
+
+
+
+
+
+
+
+
+
+

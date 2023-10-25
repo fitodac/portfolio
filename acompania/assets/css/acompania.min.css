@@ -1,0 +1,59 @@
+@import url(acompania.OLD2.css);
+#tidio-chat + div,
+#tidio-chat-code + div {
+  pointer-events: none; }
+
+form.interviews {
+  padding-bottom: 60px; }
+  form.interviews .form-control {
+    background: #eee;
+    border-color: #eee;
+    color: #333;
+    font-size: 13px;
+    height: auto;
+    padding: 12px 15px;
+    box-shadow: none;
+    border-radius: 0; }
+    form.interviews .form-control:focus {
+      box-shadow: none !important;
+      outline: none; }
+  form.interviews .checkbox-inline span {
+    font-size: 13px;
+    padding-left: 10px;
+    display: inline-block;
+    top: -1px;
+    position: relative; }
+  form.interviews .file-upload label {
+    padding-right: 20px;
+    display: inline-block; }
+  form.interviews .file-upload .form-control {
+    display: inline-block;
+    width: auto; }
+  form.interviews .captcha {
+    padding: 30px 0;
+    text-align: center; }
+    form.interviews .captcha .g-recaptcha {
+      display: inline-block; }
+  form.interviews .p-b {
+    padding-bottom: 30px; }
+  form.interviews .submitted {
+    background-color: transparent; }
+    form.interviews .submitted .paperplane {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNTFBN0Y5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzUxQTdGOTt9Cjwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTk1LDQ1Yy0wLjItMC44LTAuOC0xLjUtMS42LTEuN2wtODUuNy0yMWMtMC45LTAuMi0xLjgsMC4yLTIuMywwLjlDNC44LDI0LDQuOSwyNSw1LjUsMjUuOGwzOS44LDQ5LjkgIGMwLjcsMC44LDEuOSwxLjEsMi44LDAuNWwxMi42LTcuN2w5LjksOC44YzAsMCwwLDAsMC4xLDBjMCwwLDAsMCwwLjEsMC4xYzAsMCwwLjEsMCwwLjEsMC4xYzAsMCwwLDAsMC4xLDBjMCwwLDAuMSwwLDAuMSwwLjEgIGMwLDAsMCwwLDAuMSwwYzAsMCwwLjEsMCwwLjEsMC4xYzAsMCwwLDAsMCwwYzAsMCwwLjEsMCwwLjEsMC4xYzAsMCwwLDAsMCwwYzAuMSwwLDAuMywwLjEsMC40LDAuMWMwLDAsMC4xLDAsMC4xLDAgIGMwLDAsMC4xLDAsMC4xLDBjMCwwLDAuMSwwLDAuMSwwYzAsMCwwLDAsMCwwYzAuMSwwLDAuMSwwLDAuMiwwYzAsMCwwLDAsMC4xLDBjMCwwLDAuMSwwLDAuMSwwYzAsMCwwLDAsMC4xLDBjMC4xLDAsMC4xLDAsMC4yLDAgIGMwLDAsMCwwLDAsMGMwLjEsMCwwLjEsMCwwLjItMC4xYzAsMCwwLDAsMCwwYzAuMSwwLDAuMS0wLjEsMC4yLTAuMWMwLDAsMCwwLDAsMGMwLjEsMCwwLjEtMC4xLDAuMi0wLjFjMCwwLDAsMCwwLDAgIGMwLjMtMC4yLDAuNS0wLjUsMC43LTAuOWMwLDAsMCwwLDAsMGMwLTAuMSwwLjEtMC4xLDAuMS0wLjJjMCwwLDAsMCwwLDBjMCwwLDAtMC4xLDAtMC4xbDUtMTcuN2wxNS0xMS4zQzk0LjgsNDYuNyw5NS4xLDQ1LjgsOTUsNDUgIHogTTY0LjYsNjYuMWwyLjUtMS41bDEuMiw0LjdMNjQuNiw2Ni4xeiBNNzYsNTUuNGMtMC40LDAuMy0wLjcsMC43LTAuOCwxLjFsLTMsMTAuN2wtMS43LTYuNmMtMC4yLTAuNy0wLjYtMS4yLTEuMy0xLjUgIGMtMC42LTAuMy0xLjMtMC4yLTEuOSwwLjJsLTcuNSw0LjVjMCwwLDAsMCwwLDBsLTEyLjMsNy41TDE0LjQsMzBsNDcuOSwyOC44YzAuMiwwLjEsMC40LDAuMiwwLjYsMC4yYzAuNCwwLDAuNy0wLjIsMC45LTAuNSAgYzAuMy0wLjUsMC4xLTEuMi0wLjQtMS41TDI1LjMsMzQuMWw0NywyMS45YzAuNSwwLjIsMS4yLDAsMS40LTAuNWMwLjMtMC41LDAtMS4yLTAuNS0xLjRMMjIuNSwzMC40bDY1LjQsMTZMNzYsNTUuNHoiLz48L3N2Zz4=");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 200px;
+      height: 120px;
+      margin: 0 auto 20px; }
+  form.interviews .error {
+    color: red;
+    font-size: 13px;
+    display: none; }
+
+body.entrevistas #tidio-chat-code + div {
+  display: none; }
+
+.help-block {
+  font-size: 12px;
+  font-weight: 500 !important; }
