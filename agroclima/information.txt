@@ -1,0 +1,8 @@
+Porfavor, ten en cuenta estas recomendaciones a la hora de manipular el html.
+
+
+#1. El 'body' para cada página cuenta con un clase dedicada a esa página.
+Algunos estilos son globales, pero los elementos que solo se utilicen en esa página en especial estarán condicionados a este class en el body.
+Es recomendable mantener el class para el body de cada página.
+
+

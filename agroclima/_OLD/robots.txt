@@ -1,0 +1,6 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: https://agroclima.fitodac.com/sitemap.xml
