@@ -1,0 +1,43 @@
+.collapsible{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.collapsible .toggler{
+	font-weight: 600;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.collapsible .toggler span{
+	padding-right: 30px;
+	position: relative;
+}
+
+.collapsible .toggler span::after{
+	content: '';
+	border-top: solid 7px #404040;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
+	right: 0;
+	top: 9px;
+	position: absolute;
+}
+
+.collapsible .toggler .active::after{
+	border-top: none;
+	border-bottom: solid 7px #404040;
+}
+
+.collapsible .toggler .active{ display: none; }
+.collapsible .collapsible-body{
+	padding: 25px 0 0;
+	display: none;
+}
+
+
+.collapsible.in .toggler .active,
+.collapsible.in .collapsible-body{
+	display: block;
+}
+
+.collapsible.in .toggler .default{ display: none; }

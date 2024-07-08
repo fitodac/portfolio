@@ -1,0 +1,36 @@
+.elementor-2531 .elementor-element.elementor-element-e334af3{margin-top:0px;margin-bottom:0px;padding:60px 30px 160px 30px;}.elementor-2531 .elementor-element.elementor-element-1f2f4bf{text-align:center;}.elementor-2531 .elementor-element.elementor-element-1f2f4bf .elementor-heading-title{color:var( --e-global-color-fd0771b );font-family:"Source Sans Pro", Sans-serif;font-size:52px;font-weight:700;text-transform:capitalize;line-height:63.6px;}.elementor-2531 .elementor-element.elementor-element-1f2f4bf > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 60px 0px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post-holder{background-color:#FFFFFF;border-style:solid;border-width:1px 1px 1px 1px;border-color:#2F2F2F1A;border-radius:5px 5px 5px 5px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post{padding:0px 40px 30px 40px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post .eael-entry-footer, .elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post .eael-entry-meta{justify-content:flex-end;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-meta > span{font-family:"Source Sans Pro", Sans-serif;font-size:15px;font-weight:400;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title a{color:var( --e-global-color-add17b0 );}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title{text-align:left;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title, .elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title a{font-family:"Source Sans Pro", Sans-serif;font-size:31px;font-weight:700;line-height:1.1em;letter-spacing:0.3px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post .eael-entry-overlay{background-color:#0000002E;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post .eael-entry-overlay > i{font-size:18px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post .eael-entry-overlay > img{height:18px;width:18px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-post-elements-readmore-btn{font-family:"Source Sans Pro", Sans-serif;font-size:0.9rem;font-weight:600;line-height:1em;color:#FFFFFF;background-color:var( --e-global-color-a0b63f6 );border-radius:5px 5px 5px 5px;padding:13px 28px 13px 28px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-load-more-button{padding:14px 42px 14px 42px;margin:50px 0px 0px 0px;font-family:"Source Sans Pro", Sans-serif;font-size:17px;font-weight:600;line-height:1em;letter-spacing:0.4px;color:#FFFFFF;background:var( --e-global-color-a0b63f6 );border-radius:5px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-load-more-button-wrap{justify-content:center;}.elementor-2531 .elementor-element.elementor-element-69bad1d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}@media(max-width:1024px){.elementor-2531 .elementor-element.elementor-element-e334af3{margin-top:0px;margin-bottom:0px;padding:30px 30px 100px 30px;}.elementor-2531 .elementor-element.elementor-element-1f2f4bf .elementor-heading-title{font-size:2.5rem;line-height:1em;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post{padding:0px 10px 0px 10px;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-meta > span{font-size:0.9rem;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title, .elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title a{font-size:1.4rem;}.elementor-2531 .elementor-element.elementor-element-69bad1d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 30px 0px 30px;}}@media(max-width:767px){.elementor-2531 .elementor-element.elementor-element-e334af3{margin-top:0px;margin-bottom:0px;padding:0px 24px 120px 24px;}.elementor-2531 .elementor-element.elementor-element-1f2f4bf .elementor-heading-title{font-size:2.3rem;line-height:1em;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-meta > span{font-size:0.9rem;line-height:1em;}.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title, .elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-title a{font-size:1.5rem;line-height:1.1em;}}/* Start custom CSS for eael-post-grid, class: .elementor-element-69bad1d */.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-post-grid{
+    margin: 0 -40px;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-grid-post-holder-inner{
+    padding: 10px;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-wrapper{
+    padding: 5px 0 0;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-content{
+    width: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-header{
+    height: 100px;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-footer{
+    width: 50%;
+    vertical-align: middle;
+    text-align: right;
+    padding: 0;
+    display: inline-block;
+}
+
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-posted-on,
+.elementor-2531 .elementor-element.elementor-element-69bad1d .eael-entry-meta{
+    text-align: right;
+    width: 100%;
+    display: block;
+}/* End custom CSS */
