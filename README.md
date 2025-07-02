@@ -1,2 +1,2 @@
 # fitodac-portfolio
-Static clones of realized projects
+Static clones for realized projects
